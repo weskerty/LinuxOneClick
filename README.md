@@ -1,7 +1,7 @@
 # 🐧 Linux a un Clic
 Instalar Linux desde Windows Facilmente
 Sin Riesgos y sin Perder Archivos
-Simplemente Descarga EsteArchivo↗️ y luego ejecutalo como Administrador.
+Simplemente Descarga blob:https://github.com/e6f1398e-8a07-4a14-9d0e-6cd8340b2d57 y luego ejecutalo como Administrador.
 El script descargara Linux Mint y lo instalara, Tardara dependiendo de tu Velocidad a Internet y demas.
 >[!NOTE]
 > Solo para Windows de 64Bits instalados en UEFI
