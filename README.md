@@ -10,6 +10,7 @@ El script descargara Linux Mint y lo instalara, Tardara dependiendo de tu Veloci
 
 https://github.com/user-attachments/assets/d706560e-978a-4205-85c5-bc424dc9f056
 
+El video esta acelerado, esto tardara mucho mas.
 
 # 🌌 Cambiar tema de rEFInd;
 ## Descarga un [TemaDelCatalogo↗️](https://refind-themes-collection.netlify.app/) 
