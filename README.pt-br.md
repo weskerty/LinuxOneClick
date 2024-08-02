@@ -1,7 +1,7 @@
 # Selecione 🌎 Idioma 🇧🇷 Idioma
 [![en](https://img.shields.io/badge/English-en-red.svg)](README.md)
 [![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](README.pt-br.md)
-[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-red.svg)](README.es-419.md)
+[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](README.es-419.md)
 
 # 🐧 Linux em um clique
 Instale Linux do Windows facilmente
