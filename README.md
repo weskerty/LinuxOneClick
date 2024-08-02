@@ -104,11 +104,11 @@ Copia la carpeta rEFInd a EFI/EFI
 Ajusta el Cargador de arranque a rEFIndx64.efi
 
 En la VDI se Realizo;
-* Instalacion OEM de LinuxMint
-* Ejecucion de [vtoyBoot](https://github.com/ventoy/vtoyboot)
+* Instalacion OEM Linux
   
-Cambios en;
+Cambios en la Instalacion;
+* Ejecucion de [vtoyBoot](https://github.com/ventoy/vtoyboot)
 * [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Tiempo de espera 3 y mitigations=off.
 * [FSTAB](https://es.wikipedia.org/wiki/Fstab); agregado relatime, nodiratime, noatime.
 
-
+Puedes Reajustar estos detalles en sus Respectivos Archivos.
