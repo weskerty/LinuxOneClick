@@ -8,7 +8,6 @@ Simplemente Descarga [EsteArchivo⬇️](https://razaoinfo.dl.sourceforge.net/pr
 El script descargara Linux Mint y lo instalara.
 
 En caso de no Funcionar el Metodo Anterior, [PruebaEste⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1) 
-Esta version Requiere Ejecutarse en PowerShell como Administrador, al entrar te preguntara si quieres cambiar la politica de ejecucion de Script, debes darle a Si a Todo y Comenzara.
 
 # Video Demostrativo: 
 https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
@@ -22,9 +21,9 @@ Descarga [elArchivoPrincipal↗️](https://sourceforge.net/projects/linuxonecli
 # 💢Solucion de Errores;
 
 ## Error del Instalador;
-Usa la Alternativa de PowerShell 
+[Usa la Alternativa de PowerShell⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1)
 
-Usa la Alternativa de PowerShell mas lenta, puede tardar hasta 2H;
+[Usa la Alternativa de PowerShell #2 ⬇️](https://sitsa.dl.sourceforge.net/project/linuxoneclick/LinuxInstallAlternativa.ps1?viasf=1) Esta es mas lenta, puede tardar hasta 2H en Descargar.
 
 ## Error de Politica de Ejecucion PowerShell;
 ![image](https://github.com/user-attachments/assets/1920e51d-2600-4341-9934-805f7050e9e7)
