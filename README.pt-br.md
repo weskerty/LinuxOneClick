@@ -9,11 +9,11 @@ Sem riscos, mantendo o Windows com todos os seus arquivos.
 >[!NOTA]
 > Somente para Windows de 64 bits instalado em UEFI
 
-# Basta baixar [ThisFile⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1)
+# Basta baixar [EsteArquivo⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1)
 Em seguida, execute-o como Administrador.
 O script irá baixar o Linux Mint e instalá-lo.
 
-Se o método anterior não funcionar, [TryThis⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1)
+Se o método anterior não funcionar, [ExperimenteIsto⬇️⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1)
 
 # Vídeo de demonstração:
 https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
