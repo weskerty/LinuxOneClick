@@ -1,7 +1,7 @@
 # 🐧 Linux a un Clic
 Instalar Linux desde Windows Facilmente
 Sin Riesgos y sin Perder Archivos
-Simplemente Descarga [EsteArchivo↗️](https://master.dl.sourceforge.net/project/linuxoneclick/Instalar-rEFInd.ps1?viasf=1) y luego ejecutalo como Administrador.
+Simplemente Descarga [EsteArchivo↗️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1) y luego ejecutalo como Administrador.
 El script descargara Linux Mint y lo instalara.
 >[!NOTE]
 > Solo para Windows de 64Bits instalados en UEFI
@@ -14,7 +14,13 @@ Para Instalacion manual Descargar [elArchivoPrincipal↗️](https://sourceforge
 
 
 # 💢Solucion de Errores;
-## Error de Politica de Ejecucion;
+
+## Error del Instalador;
+Usa la Alternativa de PowerShell 
+
+Usa la Alternativa de PowerShell mas lenta, puede tardar hasta 2H;
+
+## Error de Politica de Ejecucion PowerShell;
 ![image](https://github.com/user-attachments/assets/1920e51d-2600-4341-9934-805f7050e9e7)
 
 Si te aparece esto, Simplemente Presiona la Tecla `O` y luego `ENTER` y el Script se ejecutara. (la tecla de confirmacion varia por idioma.)
@@ -27,8 +33,6 @@ Deberas abrir PowerShell Manualmente y ejecutar este coamndo, en donde lo que vi
 ```
 powershell -ExecutionPolicy Bypass -File F:\Descargas\LinuxMint\InstalarLinuxMint.ps1
 ```
-## Error del Instalador;
-
 
 # 🌌 Cambiar tema de rEFInd;
  Descarga un [TemaDelCatalogo↗️](https://refind-themes-collection.netlify.app/) 
