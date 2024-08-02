@@ -1,12 +1,14 @@
 # 🐧 Linux a un Clic
 Instalar Linux desde Windows Facilmente
-Sin Riesgos y sin Perder Archivos
-Simplemente Descarga [EsteArchivo↗️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1) y luego ejecutalo como Administrador.
-El script descargara Linux Mint y lo instalara.
-Si el Script Anterior no te funciona, [PruebaEste](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1) Este se debe ejecutar en PowerShell como Administrador, al entrar te preguntara si quieres cambiar la politica de ejecucion de Script, debes darle a Si a Todo y Comenzara.
-
+Sin Riesgos, Manteniendo Windows con Todos tus Archivos.
 >[!NOTE]
 > Solo para Windows de 64Bits instalados en UEFI
+
+Simplemente Descarga [EsteArchivo⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1) y luego ejecutalo como Administrador.
+El script descargara Linux Mint y lo instalara.
+
+En caso de no Funcionar el Metodo Anterior, [PruebaEste⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1) 
+Esta version Requiere Ejecutarse en PowerShell como Administrador, al entrar te preguntara si quieres cambiar la politica de ejecucion de Script, debes darle a Si a Todo y Comenzara.
 
 # Video Demostrativo: 
 https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
