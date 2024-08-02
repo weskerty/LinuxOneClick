@@ -7,10 +7,10 @@ El script descargara Linux Mint y lo instalara.
 > Solo para Windows de 64Bits instalados en UEFI
 
 # Video Demostrativo: 
-https://github.com/user-attachments/assets/f897a8dd-1e2b-4cd5-97d4-e5c4f5fb5511
 
-El video esta acelerado, esto tardara mucho mas, me tardo 1H30M.
-En Caso de que no tengas paciencia y no quieras esperar Tanto... Puedes Descargar [elArchivoPrincipal↗️](https://sourceforge.net/projects/linuxoneclick/files/LOClicK.zip/download) con algun gestor de descarga como JDownloader, Descomprimirlo manualmente en C:/ y ejecutar el Instalador.bat como se Muestra en [EsteVideo↗️](https://www.youtube.com/watch?v=Y1K3TLja434).
+
+El video esta acelerado, esto tardara mucho mas...
+Para Instalacion manual Descargar [elArchivoPrincipal↗️](https://sourceforge.net/projects/linuxoneclick/files/LOClicK.zip/download) con algun gestor de descarga como JDownloader, Descomprimirlo manualmente en C:/ y ejecutar el Instalador.bat como se Muestra en [EsteVideo↗️](https://www.youtube.com/watch?v=Y1K3TLja434).
 
 
 # 💢Solucion de Errores;
