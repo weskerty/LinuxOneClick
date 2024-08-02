@@ -16,12 +16,14 @@ En Caso de que no tengas paciencia y no quieras esperar Tanto... Puedes Descarga
 # 💢Solucion de Errores;
 ## Error de Politica de Ejecucion;
 ![image](https://github.com/user-attachments/assets/1920e51d-2600-4341-9934-805f7050e9e7)
+
 Si te aparece esto, Simplemente Presiona la Tecla `O` y luego `ENTER` y el Script se ejecutara. (la tecla de confirmacion varia por idioma.)
 
 
 ## 2
 ![image](https://github.com/user-attachments/assets/60d9ea10-d944-4bed-90f3-bdf435bec5fa)
-## Deberas abrir PowerShell Manualmente y ejecutar este coamndo, en donde lo que viene despues de  `-File` es la ubicacion del archivo instalador (InstalarLinuxMint.ps1) 
+
+Deberas abrir PowerShell Manualmente y ejecutar este coamndo, en donde lo que viene despues de  `-File` es la ubicacion del archivo instalador (InstalarLinuxMint.ps1) 
 ```
 powershell -ExecutionPolicy Bypass -File F:\Descargas\LinuxMint\InstalarLinuxMint.ps1
 ```
