@@ -44,7 +44,7 @@ if exist "S:\EFI\refind" (
 
 echo Instalando rEFInd...
 
-xcopy /E /I /Y "C:\rEFIndAjustes\refind" "S:\EFI\refind" > nul 2>&1
+xcopy /E /I /Y "C:\LinuxMint\refind" "S:\EFI\refind" > nul 2>&1
 
 if %errorlevel% neq 0 (
     echo Error en la copia. Intenta abrir desde CMD como Administrador y no en PowerShell...
