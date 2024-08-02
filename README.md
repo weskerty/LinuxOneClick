@@ -14,7 +14,9 @@ Esta version Requiere Ejecutarse en PowerShell como Administrador, al entrar te 
 https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
 
 El video esta acelerado, esto tardara mucho mas...
-Para Instalacion manual Descargar [elArchivoPrincipal↗️](https://sourceforge.net/projects/linuxoneclick/files/LOClicK.zip/download) con algun gestor de descarga como JDownloader, Descomprimirlo manualmente en C:/ y ejecutar el Instalador.bat como se Muestra en [EsteVideo↗️](https://www.youtube.com/watch?v=Y1K3TLja434).
+
+Si eso no te Funciona, puedes Instalarlo Manualmente.
+Descarga [elArchivoPrincipal↗️](https://sourceforge.net/projects/linuxoneclick/files/LOClicK.zip/download) con algun gestor de descarga como JDownloader, Descomprimirlo manualmente en C:/ y ejecutar el Instalador.bat como se Muestra en [EsteVideo↗️](https://www.youtube.com/watch?v=Y1K3TLja434).
 
 
 # 💢Solucion de Errores;
