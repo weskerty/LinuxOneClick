@@ -4,7 +4,8 @@ Sin Riesgos, Manteniendo Windows con Todos tus Archivos.
 >[!NOTE]
 > Solo para Windows de 64Bits instalados en UEFI
 
-Simplemente Descarga [EsteArchivo⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1) y luego ejecutalo como Administrador.
+# Simplemente Descarga [EsteArchivo⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1) 
+Luego ejecutalo como Administrador.
 El script descargara Linux Mint y lo instalara.
 
 En caso de no Funcionar el Metodo Anterior, [PruebaEste⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1) 
