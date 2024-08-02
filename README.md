@@ -2,7 +2,7 @@
 Instalar Linux desde Windows Facilmente
 Sin Riesgos y sin Perder Archivos
 Simplemente Descarga [EsteArchivo↗️](InstalarLinuxMint.ps1) y luego ejecutalo como Administrador.
-El script descargara Linux Mint y lo instalara, Tardara dependiendo de tu Velocidad a Internet y demas.
+El script descargara Linux Mint y lo instalara.
 >[!NOTE]
 > Solo para Windows de 64Bits instalados en UEFI
 
@@ -10,7 +10,8 @@ El script descargara Linux Mint y lo instalara, Tardara dependiendo de tu Veloci
 
 https://github.com/user-attachments/assets/d706560e-978a-4205-85c5-bc424dc9f056
 
-El video esta acelerado, esto tardara mucho mas.
+El video esta acelerado, esto tardara mucho mas. A mi me tardo 1H30M
+En Caso de que no tengas paciencia y no quieras esperar Tanto... Puedes Descargar [elArchivoPrincipal↗️](https://sourceforge.net/projects/linuxoneclick/files/LOClicK.zip/download) con algun gestor de descarga como JDownloader, Descomprimirlo manualmente en C:/ y ejecutar el Instalador.bat como se Muestra en [EsteVideo↗️](https://www.youtube.com/watch?v=Y1K3TLja434).
 
 # 🌌 Cambiar tema de rEFInd;
 ## Descarga un [TemaDelCatalogo↗️](https://refind-themes-collection.netlify.app/) 
