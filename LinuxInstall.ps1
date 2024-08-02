@@ -4,7 +4,7 @@ $outputFile = "C:\Temporal.zip"
 $destinationFolder = "C:\"
 
 Write-Output "Descargando Archivo. Esto Tomara Tiempo, Relajate :)"
-Invoke-WebRequest -Uri $downloadUrl -OutFile $outputFile
+Start-BitsTransfer -Source $downloadUrl -Destination $outputFile
 
 Write-Output "Descomprimiendo. Esto tomara aun mas Tiempo, Relajate x2 :)"
 Expand-Archive -Path "$outputFile" -DestinationPath "$destinationFolder"
