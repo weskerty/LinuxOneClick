@@ -7,7 +7,7 @@
 Install Linux from Windows Easily
 Without Risks, Keeping Windows with All Your Files.
 >[!NOTE]
-> Only for 64Bit Windows installed in UEFI
+> Only for 64Bit Windows installed in UEFI and SecureBoot Off In case of any failure, press F12 to choose Windows again.
 
 # Simply Download [ThisFile⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1)
 Then run it as Administrator.
