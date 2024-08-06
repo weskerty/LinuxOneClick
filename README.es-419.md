@@ -117,3 +117,6 @@ Cambios en la Instalacion;
 * [FSTAB](https://es.wikipedia.org/wiki/Fstab); agregado relatime, nodiratime, noatime.
 
 Puedes Reajustar estos detalles en sus Respectivos Archivos.
+
+
+![image](https://github.com/user-attachments/assets/05bbe658-7097-4326-b318-f8043a418ebf)
