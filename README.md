@@ -1,4 +1,4 @@
-# Select 🌎 Idioma 🇧🇷 Language
+# 🌎 Select Language;
 [![en](https://img.shields.io/badge/English-en-red.svg)](README.md)
 [![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](README.pt-br.md)
 [![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](README.es-419.md)
@@ -6,114 +6,67 @@
 # 🐧 Linux in one Click
 Install Linux from Windows Easily
 Without Risks, Keeping Windows with All Your Files.
+
+# 💾 Simply Download and Install [This File ⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/MiLinuxVDI.exe?viasf=1)
+
 >[!NOTE]
-> Only for 64Bit Windows installed in UEFI and SecureBoot Off In case of any failure, press F12 to choose Windows again.
-
-# Simply Download [ThisFile⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/InstallLinux.bat?viasf=1)
-Then run it as Administrator.
-The script will download Linux Mint and install it.
-
-If the Previous Method does not work, [TryThis⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1)
+> 🔓 SecureBoot Disabled Required. If you have it enabled, the program will be installed but when you restart, Windows will start normally.
+# [🔓 Guide on how to Disable SecureBoot ↗️](Guides/SecureBoot.md)
 
 # Demonstration Video:
-https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
-
-The video is accelerated, this will take much longer...
-
-If that doesn't work for you, you can install it manually.
-Download [elArchivoPrincipal↗️](https://sourceforge.net/projects/linuxoneclick/files/LOClicK.zip/download) with a download manager like JDownloader, Unzip it manually in C:/ and run the Installer.bat as shown in [ThisVideo↗️](https://www.youtube.com/watch?v=Y1K3TLja434).
+>[!NOTE]
+> The video is accelerated, this will take time depending on your PC.<br>
+> When you open the Exe, the explorer window will hang until it finishes copying if you have activated User Account Control
 
 
-# 💢Bug Fixes;
+# 🤨 What does this do to my PC?
+The Executable decompresses all this in C:/MiLinux/ <br>
+If UEFI is detected, install [rEFIndx64](https://www.rodsbooks.com/refind/) <br>
+In case of BIOS Detect, Install [Grub2Win](https://sourceforge.net/projects/grub2win/) <br>
+Added modules like [vdiskchain and ipxe](https://github.com/ventoy/vdiskchain) that are necessary for VDI Boot <br>
+A 25GB VDI is added to C:/MiLinux/MiLinux.vtoy. This is the Linux Disk. <br>
+Set rEFInd or Grub2 as Boot Manager. <br>
 
-## Installer error;
-[Use PowerShell Alternative⬇️](https://razaoinfo.dl.sourceforge.net/project/linuxoneclick/LinuxInstall.ps1?viasf=1)
-
-[Use PowerShell Alternative #2 ⬇️](https://sitsa.dl.sourceforge.net/project/linuxoneclick/LinuxInstallAlternativa.ps1?viasf=1) This is slower, it can take up to 2H to Download.
-
-## PowerShell Execution Policy Error;
-![image](https://github.com/user-attachments/assets/1920e51d-2600-4341-9934-805f7050e9e7)
-
-If this appears, simply press the `O` key and then `ENTER` and the Script will be executed. (the confirmation key varies by language.)
-
-
-## 2
-![image](https://github.com/user-attachments/assets/60d9ea10-d944-4bed-90f3-bdf435bec5fa)
-
-You must open PowerShell manually and run this command, where what comes after `-File` is the location of the installer file (InstallLinuxMint.ps1)
-```
-powershell -ExecutionPolicy Bypass -File F:\Downloads\LinuxMint\InstallLinuxMint.ps1
-```
-
-# 🌌 Change rEFInd theme;
- Download a [CatalogTheme↗️](https://refind-themes-collection.netlify.app/)
-
-And Move it to the Folder `C:\LinuxMint\refind\themes`
-
-![image](https://github.com/user-attachments/assets/86d591ac-8071-406a-9069-8d2d8d8fc327)
-
-Open `refind.confg` with a text editor and modify the last line with the folder name of your new theme.
-
-![image](https://github.com/user-attachments/assets/efd309fc-7ac4-4990-a39c-4b44d460bb22)
-
-Then run the Install.bat which is in the LinuxMint folder
-
-![image](https://github.com/user-attachments/assets/0d5865f4-faf6-4a66-897d-eaf4c4c4b1e1)
-
-### Ready, New topic.
-
-# 🥶 I don't like Linux Mint, can I use another one?
-Yeah. For that you will have to download your ideal Linux and run it in VirtualBox setting LinuxMint.vtoy as Storage Disk.
-
-## 🛂 Steps to Follow;
-### Downloads Required;
-Download [VirtualBox↗️](https://www.virtualbox.org/wiki/Downloads) and install it. Download the ISO of your Distro.
-
-## 💽 Adjust VirtualBox;
-Enter New machine
-
-![image](https://github.com/user-attachments/assets/8cfe0337-2f92-4e9a-9059-a70f0e3929ba)
-
-Adjust the Name and ISO File of your Linux that will be used Skipping Unattended Installation and Next.
-
-![image](https://github.com/user-attachments/assets/9444832a-22e0-4ca8-b8c7-59123e7edf86)
-
-Set "Enable EFI"
-
-![image](https://github.com/user-attachments/assets/e01e764c-4e5f-4add-ada7-e54861325a8e)
-
-Select LinuxMint.vtoy as Storage Disk
-
-![image](https://github.com/user-attachments/assets/8db49d24-f9df-4a5d-8d49-c3eef4a07502)
-![image](https://github.com/user-attachments/assets/f89af4ec-c031-4132-9030-50a084c4b988)
-
-Terminate and Start the System
-
-![image](https://github.com/user-attachments/assets/bf4f98b0-5aa1-4895-be64-6057e17febfe)
-
-Install your Distro as usual...
-
-
-Once installed you must Download [ThisFile↗️](https://github.com/ventoy/vtoyboot/releases) on your Virtual Linux, unzip it and run `vtoyboot.sh`
-
-After this you can Restart your real PC and use it at maximum performance.
-
-# 🤨 What does the Script do?
-Download a ZIP containing;
-[rEFIndx64](https://www.rodsbooks.com/refind/), [vdiskchain](https://github.com/ventoy/vdiskchain) and a 35GB VDI.
-
-Unzip the ZIP in the C:/ nightclub
-
-Copy rEFInd folder to EFI/EFI
-
-Set the bootloader to rEFIndx64.efi
-
+# 🐧 MyLinux
 In the VDI it was done;
-*OEM Linux installation
+* OEM installation of Linux Mint
 
-Installation Changes;
+Changes in the Installation;
 * Running [vtoyBoot](https://github.com/ventoy/vtoyboot)
-* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Timeout 3 and mitigations=off.
+* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Timeout 1s and mitigations=off.
 * [FSTAB](https://es.wikipedia.org/wiki/Fstab); added relatime, nodiratime, noatime.
+You can Adjust these details in their Respective Files.
+If mitigations bother you, just delete it. sudo nano /etc/default/grub and delete mitigations=off, save it and then update grub with sudo update-grub
 
-You can reset these details in their Respective Files.
+# [🌄Home Theme Installation ↗️](Guides/Themes.md)
+
+# 💢 Bugs? [Report it Here ↗️](https://github.com/weskerty/LinuxOneClick/issues/new)
+
+# 🗑️ Uninstallation;
+Just go to C:/MyLinux/uninstall.exe to Uninstall it.
+
+# 🖥️ This works on; <img src="https://github.com/user-attachments/assets/8ff47ebe-780f-4d4b-894f-779c0887d844" alt="WorkOnMiPCGG" width="100" height="60"/>
+
+- [x] Windows XP SP3 32 and 64Bits (Official) - VirtualBox
+- [x] Windows Vista 32 and 64Bits - VirtualBox
+- [x] Windows7 SP1 32 and 64Bits - VirtualBox
+- [x] Windows10 22H2 32 and 64Bits - GigabyteA320M
+- [?] Windows11 23H3 64 Bit
+
+>[!NOTE]
+> Although installed on 32Bit Windows, the Processor must be 64Bit Compatible to Start LinuxMint. <br>
+> The Script uses Partition C:/. If it is not available it will fail. <br>
+
+> [!WARNING]
+> The installation will damage the WindowsXP Boot if it is not Official WXP.
+> In case the System does not start again, Press the [BootMenu Button ↗️](Guides/BootMenu.md) as soon as your PC starts. Then Choose WindowsBootLoader<br>
+> Alternatively you can use a [Repair Disk ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86- 20240711-english-version.html) to Start Windows or Recover your Files.
+# [💽 Guide on How to Install LinuxMint Directly ↗️](Guides/LinuxInstall.md)
+
+# 💗 Used [NSIS Mod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain] (https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/ )
+
+# 📝 Everyone is Free to Edit this Concoction of Scripts
+
+Old Video in Script mode.
+https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
+This was beautiful, unfortunately it didn't work with W7 and below, not even with curl due to certificate errors.
