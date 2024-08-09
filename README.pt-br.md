@@ -14,10 +14,10 @@ Sem riscos, mantendo o Windows com todos os seus arquivos.
 # [🔓 Guia sobre como desativar o SecureBoot ↗️](Guides/SecureBoot.md)
 
 # Vídeo de demonstração:
+https://github.com/user-attachments/assets/f729b276-0923-41c1-9bd5-7d44e5524a82
 >[!NOTA]
 > O vídeo é acelerado, isso levará algum tempo dependendo do seu PC.<br>
-> Ao abrir o Exe, a janela do explorer irá travar até terminar a cópia se você tiver ativado o Controle de Conta de Usuário
-
+> Ao abrir o Exe, a janela do explorer irá travar até terminar a cópia se você tiver o Controle de Conta de Usuário ativado. Paciência.
 
 # 🤨 O que isso faz no meu PC?
 O Executável descompacta tudo isso em C:/MiLinux/ <br>
@@ -58,9 +58,9 @@ Basta ir para C:/MyLinux/uninstall.exe para desinstalá-lo.
 > O Script usa Partição C:/. Se não estiver disponível, falhará. <br>
 
 > [!AVISO]
-> A instalação danificará o Boot do WindowsXP se não for WXP Oficial.
+> A instalação danificará o Boot do WindowsXP se não for WXP Oficial. <br>
 > Caso o sistema não reinicie, pressione o [botão BootMenu ↗️](Guides/BootMenu.md) assim que o PC iniciar. Em seguida, escolha WindowsBootLoader<br>
-> Alternativamente, você pode usar um [Disco de Reparo ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86- 20240711-english-version.html) para iniciar o Windows ou recuperar seus arquivos.
+> Alternativamente, você pode usar um [Disco de Reparo ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86- 20240711-english-version.html) para iniciar o Windows ou recuperar seus arquivos. <br>
 # [💽 Guia sobre como instalar o LinuxMint diretamente ↗️](Guides/LinuxInstall.md)
 
 # 💗 Usado [Mod NSIS](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain] ( https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/ )
