@@ -14,8 +14,10 @@ Sin Riesgos, Manteniendo Windows con Todos tus Archivos.
 # [🔓 Guia de como Deshabilitar SecureBoot ↗️](Guias/SecureBoot.md)
 
 # Video Demostrativo: 
-
-El video esta acelerado, esto tardara dependiendo de tu PC.
+https://github.com/user-attachments/assets/f729b276-0923-41c1-9bd5-7d44e5524a82
+>[!NOTE]
+> El video esta acelerado, esto tardara dependiendo de tu PC.<br>
+> Al abrir el Exe la ventana del explorador se quedara colgada hasta que termine de copiarse si tienes activado el Control Cuentas de Usuario. Paciencia.
 
 # 🤨 ¿Que le hace esto a mi PC?
 El Executable descomprime Todo esto en C:/MiLinux/ <br>
@@ -56,12 +58,15 @@ Simplemente vaya a C:/MiLinux/uninstall.exe para Desinstalarlo.
 > El Script usa la Particion C:/. Si esta no esta Disponible Fallara. <br>
 
 > [!WARNING]
-> La instalacion Dañara el Boot de WindowsXP en caso de que no sea WXP Oficial.
+> La instalacion Dañara el Boot de WindowsXP en caso de que no sea WXP Oficial. <br>
 > En Caso de que el Sistema no vuelva a iniciar, Pulse el [Boton BootMenu ↗️](Guias/BootMenu.md) al Instante que Inicia su PC. Luego Elija WindowsBootLoader<br>
-> Alternativamente Puede usar un [Disco de Reparacion ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86-20240711-english-version.html) para Iniciar Windows o Recuperar tus Archivos.
+> Alternativamente Puede usar un [Disco de Reparacion ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86-20240711-english-version.html) para Iniciar Windows o Recuperar tus Archivos. <br>
 # [💽 Guia de Como Instalar LinuxMint Directamente ↗️](Guias/LinuxInstall.md)
 
-# 💗 Se Uso [NSIS](https://nsis.sourceforge.io/Main_Page), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/)
+# 💗 Se Uso [NSIS Mod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/)
 
 # 📝 Todos Son Libres de Editar este Mejunje de Scripts 
 
+Video Antiguo en modo Script. 
+https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
+Esto era hermoso, lamentablemente no funcionaba con W7 e inferiores, nisiquiera con curl por errores de certificado.
