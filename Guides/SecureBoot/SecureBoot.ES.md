@@ -1,3 +1,8 @@
+# 🌎 Selecciona Idioma; 
+[![en](https://img.shields.io/badge/English-en-red.svg)](Guides/SecureBoot/SecureBoot.md)
+[![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](Guides/SecureBoot/SecureBoot.BR.md)
+[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](Guides/SecureBoot/SecureBoot.ES.md)
+
 # 🔏 ¿Que es SecureBoot?
 SecureBoot es un Sistema de Seguridad la cual evita que programas no certificados puedan arrancar con el Sistema. <br>
 Lamentablemente este Script de Instalacion Facil Requiere tener SecureBoot Desactivado. 
@@ -16,12 +21,14 @@ Esto Reemplazara la Llave de SecureBoot anterior para permitir la Ejecucion de e
 <details>
 <summary>👨‍💻 Desactivar SecureBoot desde BIOS</summary>
 La mejor Opcion, Permite la Ejecucion de todo tipo de Sistemas y Aplicaciones al Iniciar la PC.<br>
-Para Desactivar SecureBoot con este metodo Deberas Reiniciar la PC y Pulsar la Tecla `Setup` que aparece en Pantalla. Suele ser `F2` `F12` o `DEL`
-
-### 💻 Ejemplos por Marca; 
+Para Desactivar SecureBoot con este metodo Deberas Reiniciar la PC, y cuando enciende Deberas Pulsar la Tecla `Setup` que aparece en Pantalla. Suele ser `F2` `F12` o `DEL` <br>
+Luego Buscar a travez de las flechas del teclado la Seccion Sistema, Inicio, Seguridad o BOOT y en un Sub Menu debe aparecer SecureBoot, ajustarlo a apagado, guardar y reiniciar. <br>
+Esto varia por PC, Aqui dejare unos Ejemplos de algunas marcas;
+  
 <details>
-<summary>Lenovo</summary>
-https://github.com/user-attachments/assets/1517bb59-abd1-43a2-9a51-0ef32ccd21db
+<summary>Lenovo ThinkPad</summary>
+Aqui un Ejemplo en Video de la Propia Lenovo;
+<video src="https://github.com/user-attachments/assets/1517bb59-abd1-43a2-9a51-0ef32ccd21db">
 </details>
 <details>
 <summary>HP</summary>
