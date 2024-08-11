@@ -1,7 +1,7 @@
 # 🌎 Select Language;
-[![en](https://img.shields.io/badge/English-en-red.svg)](Guides/SecureBoot/SecureBoot.md)
-[![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](Guides/SecureBoot/SecureBoot.BR.md)
-[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](Guides/SecureBoot/SecureBoot.ES.md)
+[![en](https://img.shields.io/badge/English-en-red.svg)](SecureBoot.md)
+[![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](SecureBoot.BR.md)
+[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](SecureBoot.ES.md)
 
 # 🔏 What is SecureBoot?
 SecureBoot is a Security System which prevents non-certified programs from starting with the System. <br>
