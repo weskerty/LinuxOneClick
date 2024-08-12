@@ -71,7 +71,7 @@ If mitigations bother you, just delete it. sudo nano /etc/default/grub and delet
 > [!WARNING]
 > The installation will damage the WindowsXP Boot if it is not Official WXP. <br>
 > In case Windows does not start again, press the [BootMenu Button ↗️](Guides/BootMenu/BootMenu.md) as soon as your PC starts. Then Choose WindowsBootLoader<br>
-> Alternatively you can use a [Repair Disk ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86- 20240711-english-version.html) to Start Windows. <br>
+> Alternatively you can use a [Repair Disk ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86-20240711-english-version.html) to Start Windows. <br>
 
 ## [💽 Guide on How to Install LinuxMint Directly ↗️](Guides/LinuxInstall/LinuxInstall.md)
 
