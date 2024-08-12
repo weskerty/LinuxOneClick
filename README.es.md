@@ -1,25 +1,24 @@
-# 🌎 Selecciona Idioma; 
-[![en](https://img.shields.io/badge/English-en-red.svg)](README.md)
+## 🌎 Selecciona Idioma; 
+[![en](https://img.shields.io/badge/English-red.svg)](README.md)
 [![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](README.pt-br.md)
-[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](README.es-419.md)
+[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](README.es.md)
 
-# 🐧 Linux a un Clic
+## 🐧 Linux a un Clic
 Instalar Linux desde Windows Facilmente
 Sin Riesgos, Manteniendo Windows con Todos tus Archivos.
+## 💾 Simplemente Descarga e Instala [Este Archivo ⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/MiLinuxVDI.exe?viasf=1) 
+Relajate Hasta que Termine el Proceso. Puedes hacer otras cosas Mientras se instala, como Navegar por Internet.
 
-# 💾 Simplemente Descarga e Instala [Este Archivo ⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/MiLinuxVDI.exe?viasf=1)  
-
->[!NOTE]
-> 🔓 Se Requiere SecureBoot Deshabilitado. En caso de tenerlo habilitado el programa se instalara pero al Reiniciar Iniciara Windows Normalmente.
-# [🔓 Guia de como Deshabilitar SecureBoot ↗️](Guias/SecureBoot.md)
-
-# Video Demostrativo: 
+## 📹 Video Demostrativo: 
 https://github.com/user-attachments/assets/f729b276-0923-41c1-9bd5-7d44e5524a82
 >[!NOTE]
 > El video esta acelerado, esto tardara dependiendo de tu PC.<br>
-> Al abrir el Exe la ventana del explorador se quedara colgada hasta que termine de copiarse si tienes activado el Control Cuentas de Usuario. Paciencia.
+> Se Requiere 35GB de Espacio Libre. <br>
+> Al abrir el Exe la ventana del explorador se quedara colgada hasta que termine de copiarse si tienes activado el Control Cuentas de Usuario. Paciencia. <br>
+> 🔓 Se Requiere SecureBoot Deshabilitado. En caso de tenerlo habilitado el programa se instalara pero al Reiniciar Iniciara Windows Normalmente.
+## [🔓 Guia de como Deshabilitar SecureBoot ↗️](Guides/SecureBoot/SecureBoot.md)
 
-# 🤨 ¿Que le hace esto a mi PC?
+## 🤨 ¿Que le hace esto a mi PC?
 El Executable descomprime Todo esto en C:/MiLinux/ <br>
 En caso de Detectarse UEFI Instala [rEFIndx64](https://www.rodsbooks.com/refind/) <br>
 En caso de Detectase BIOS Instala [Grub2Win](https://sourceforge.net/projects/grub2win/) <br>
@@ -27,46 +26,63 @@ Se agrega modulos como [vdiskchain y ipxe](https://github.com/ventoy/vdiskchain)
 Se agrega un VDI de 25GB en C:/MiLinux/MiLinux.vtoy. Este es el Disco Linux. <br>
 Se establece rEFInd o Grub2 como Gestor de Arranque. <br>
 
-# 🐧 MiLinux 
-En la VDI se Realizo;
-* Instalacion OEM de Linux Mint
-  
-Cambios en la Instalacion;
-* Ejecucion de [vtoyBoot](https://github.com/ventoy/vtoyboot)
-* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Tiempo de espera 1s y mitigations=off.
-* [FSTAB](https://es.wikipedia.org/wiki/Fstab); agregado relatime, nodiratime, noatime.
-Puedes Reajustar estos detalles en sus Respectivos Archivos.
-En caso de molestarte mitigations solo borralo. sudo nano /etc/default/grub y borra mitigations=off, guardalo y luego actualiza grub con sudo update-grub
+## 🙋💖 Grupos de Ayuda Linux 🤗
+#### Español;
+[![Facebook](https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=fff&style=flat)](https://www.facebook.com/groups/LinuxGroups/) 	 
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?logo=whatsapp&logoColor=fff&style=flat)](https://chat.whatsapp.com/BsBW4RbEVpj8KO22AN2KDB) 	 
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=fat&logo=telegram&logoColor=white)](https://t.me/addlist/pbpqO72i6x44MmQx)	
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=fat&logo=discord&logoColor=white)](https://discord.com/invite/XYYvqUF3pG)
+#### PortuguêsBR; 
+[![Facebook](https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=fff&style=flat)](https://www.facebook.com/groups/brlinux/) 	 
+#### English; 
+[![Facebook](https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=fff&style=flat)](https://www.facebook.com/groups/GNUAndLinux/) 	 
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=fat&logo=discord&logoColor=white)](https://discord.com/invite/D4ETYhq)
 
-# [🌄Instalacion de Temas de Inicio ↗️](Guias/Temas.md)
+## [🌄Instalacion de Temas de Inicio ↗️](Guides/Themes/Themes.md)
 
-# 💢 ¿Errores? [Informalo Aqui ↗️](https://github.com/weskerty/LinuxOneClick/issues/new)
+## 💢 ¿Errores? [Informalo Aqui ↗️](https://github.com/weskerty/LinuxOneClick/issues/new)
 
-# 🗑️ Desinstalacion;
+## 🗑️ Desinstalacion;
 Simplemente vaya a C:/MiLinux/uninstall.exe para Desinstalarlo.
 
-# 🖥️ Esto funciona en;  <img src="https://github.com/user-attachments/assets/8ff47ebe-780f-4d4b-894f-779c0887d844" alt="WorkOnMiPCGG" width="100" height="60"/>
+## [💿 Aumentar Tamaño de Almacenamiento Linux VDI ↗️](Guides/VDI/VDI.md)
 
-- [x] Windows XP SP3 32 y 64Bits (Oficial) - VirtualBox
-- [x] Windows Vista 32 y 64Bits - VirtualBox
-- [x] Windows7 SP1 32 y 64Bits - VirtualBox
-- [x] Windows10 22H2 32 y 64Bits - GigabyteA320M
-- [?] Windows11 23H3 64 Bits 
+## 🐧 MiLinux 
+En la VDI se Realizo;
+* Instalacion OEM de Linux Mint
+* Ejecucion de [vtoyBoot](https://github.com/ventoy/vtoyboot) <br>
+* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Agregado; VTOY_LINUX_REMOUNT=1  mitigations=off mok_sb_state=0. <br>
+* [FSTAB](https://es.wikipedia.org/wiki/Fstab); Agregado; relatime, nodiratime, noatime. <br>
+Puedes Reajustar estos detalles en sus Respectivos Archivos. <br>
+En caso de molestarte mitigations solo borralo. sudo nano /etc/default/grub y borra mitigations=off, guardalo y luego actualiza grub con sudo update-grub
+
+## 🖥️ Esto funciona en;  <img src="https://github.com/user-attachments/assets/8ff47ebe-780f-4d4b-894f-779c0887d844" alt="WorkOnMiPCGG" width="100" height="60"/>
+
+- [x] WindowsXP 32 y 64Bits (Oficial) - VirtualBox
+- [x] WindowsVista 32 y 64Bits - VirtualBox
+- [x] Windows7 32 y 64Bits - VirtualBox
+- [x] Windows10 32 y 64Bits - GigabyteA320M
+- [x] Windows11 23H3 64 Bits - VirtualBox
 
 >[!NOTE]
 > Aunque se instala en Windows de 32Bits, el Procesador debe ser Compatible con 64Bits para Iniciar LinuxMint. <br>
-> El Script usa la Particion C:/. Si esta no esta Disponible Fallara. <br>
+> El Script usa la Particion C:/. Si esta no esta Disponible no sucedera nada. <br>
 
 > [!WARNING]
 > La instalacion Dañara el Boot de WindowsXP en caso de que no sea WXP Oficial. <br>
-> En Caso de que el Sistema no vuelva a iniciar, Pulse el [Boton BootMenu ↗️](Guias/BootMenu.md) al Instante que Inicia su PC. Luego Elija WindowsBootLoader<br>
-> Alternativamente Puede usar un [Disco de Reparacion ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86-20240711-english-version.html) para Iniciar Windows o Recuperar tus Archivos. <br>
-# [💽 Guia de Como Instalar LinuxMint Directamente ↗️](Guias/LinuxInstall.md)
+> En Caso de que Windows no vuelva a iniciar, Pulse el [Boton BootMenu ↗️](Guides/BootMenu/BootMenu.md) al Instante que Inicia su PC. Luego Elija WindowsBootLoader<br>
+> Alternativamente Puede usar un [Disco de Reparacion ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86-20240711-english-version.html) para Iniciar Windows. <br>
 
-# 💗 Se Uso [NSIS Mod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/)
+## [💽 Guia de Como Instalar LinuxMint Directamente ↗️](Guides/LinuxInstall/LinuxInstall.md)
 
-# 📝 Todos Son Libres de Editar este Mejunje de Scripts 
+## 💗 Se Uso [NSISMod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/)
 
-Video Antiguo en modo Script. 
-https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0
-Esto era hermoso, lamentablemente no funcionaba con W7 e inferiores, nisiquiera con curl por errores de certificado.
+## 📝 Todos Son Libres de Editar este Mejunje de Scripts 
+
+<details>
+<summary>Antiguo</summary>
+Esto era hermoso, hasta podias elegir que Distro Instalar. Pero lamentablemente no funcionaba con W7 e inferiores, nisiquiera con curl por errores de certificado.
+
+<video src="https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0">
+
+</details>
