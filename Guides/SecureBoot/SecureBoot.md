@@ -1,26 +1,17 @@
-# 🌎 Select Language;
-[![en](https://img.shields.io/badge/English-en-red.svg)](SecureBoot.md)
-[![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](SecureBoot.BR.md)
-[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](SecureBoot.ES.md)
+## 🌎 Select Language;
+[![en](https://img.shields.io/badge/English-red.svg)](SecureBoot.md)
+[![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](SecureBoot.br.md)
+[![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](SecureBoot.es.md)
 
 # 🔏 What is SecureBoot?
 SecureBoot is a Security System which prevents non-certified programs from starting with the System. <br>
 Unfortunately this Easy Installation Script Requires having SecureBoot Disabled.
 
-#3️⃣ Here are 3 Alternatives You Can Try
-<details>
-<summary>🔏 No need to enter the BIOS</summary>
-This is a Semi-Automatic Installation Script that Requires Interaction. This does not disable SecureBoot, but adds a globally used key so that programs with this key can run. <br>
-Yours Bootloader will be installed, a variant of rEFInd that Replaces the BOOT folder of the EFI partition, this may not work on Computers with Firmware of 2024 and Higher.<br>
-Here is a demonstration video of what you should do;
-
-This will replace the previous SecureBoot Key to allow this Key/Certificate to be executed.
-
-</details>
+# 📴 Here You Have 2 Deactivation Methods;
 
 <details>
 <summary>👨‍💻 Disable SecureBoot from BIOS</summary>
-The best option, it allows the execution of all types of systems and applications when starting the PC.<br>
+This method Disables SecureBoot and Allows the Execution of all types of Systems and Applications when Starting the PC.<br>
 To Deactivate SecureBoot with this method, you must restart the PC, and when it turns on, you must press the `Setup` key that appears on the screen. This is usually `F2` `F12` or `DEL` <br>
 Then use the keyboard arrows to search for the System, Start, Security or BOOT Section and SecureBoot should appear in a Sub Menu, set it to off, save and restart. <br>
 This varies by PC, here I will leave some examples of some brands;
@@ -44,10 +35,10 @@ Now Press `F10` or go to the Save and Restart Section. Reboot and Everything Rea
 
 <details>
 <summary>Gigabyte</summary>
-You must restart and when it turns on, press the 'DEL' key to display the menu. Then go to the System or BIOS Section and Select SecureBoot <br>
-<img src="https://github.com/user-attachments/assets/284ecb93-4284-42af-b042-0a15faf6a894"> <br>
+You will have to restart and when it turns on, press the 'DEL' key to display the menu. Then go to the System or BIOS Section and Select SecureBoot <br>
+<img src="https://github.com/user-attachments/assets/284ecb93-4284-42af-b042-0a15faf6a894" width="350" height="240" /> <br>
 Then select SecureBoot, enter and Disable/OFF. <br>
-<img src="https://github.com/user-attachments/assets/cbff9304-1fb4-455f-9808-a8ccc3c93659"> <br>
+<img src="https://github.com/user-attachments/assets/cbff9304-1fb4-455f-9808-a8ccc3c93659" width="350" height="240" /> <br>
 Now go to Save and Restart.
 
 
@@ -55,9 +46,17 @@ Now go to Save and Restart.
 
 </details>
 
-
-
 <details>
-<summary>Install Linux Manually</summary>
+<summary>🔏 No need to enter the BIOS</summary>
+This is a Semi-Automatic Installation Script that Installs YoursBootloader. Requires a one-time Interaction to Add a Key. <br>
+SecureBoot is not deactivated here, Replace the Previous Key with a Global Use Key so that Programs with this key Can Run. <br>
+This Replaces the BOOT folder of the EFI partition, this may not work on Computers with Firmware 2024 and Higher.<br>
+Download it from Here; https://github.com/weskerty/rEFIndWindowsInstaller/releases/download/SecureBoot/Yours.exe <br>
+
+Thanks MLP YoursBootloader; https://github.com/M-L-P/Yours-UEFI
+
+Here is a demonstration video of what you should do;
+<img src="https://github.com/user-attachments/assets/3353ca92-bd34-4924-a4ac-e909f78b2662"> <br>
+<video src="https://github.com/user-attachments/assets/dbdf15c5-0af3-4857-8837-17f4e27bea10"> <br>
 
 </details>
