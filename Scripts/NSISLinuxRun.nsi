@@ -11,12 +11,12 @@ Section "MainSection" SEC01
     SetOutPath "$INSTDIR"
     
     SetCompress off
-    File "F:\Documentos\LinuxMint\MiLinux\MiLinuxZip\MiLinuxVDI.zip"
+    File "F:\Documentos\LinuxMint\MiLinux\MiLinuxZip\MiLinuxVDI.7z"
     File "F:\Documentos\LinuxMint\MiLinux\MiLinuxZip\7za.exe"
     
-    ExecWait '"$INSTDIR\7za.exe" x "$INSTDIR\MiLinuxVDI.zip" -o"$INSTDIR" -y'
+    ExecWait '"$INSTDIR\7za.exe" x "$INSTDIR\MiLinuxVDI.7z" -o"$INSTDIR" -y'
     
-    Delete "$INSTDIR\MiLinuxVDI.zip"
+    Delete "$INSTDIR\MiLinuxVDI.7z"
     Delete "$INSTDIR\7za.exe"
     
     ${If} ${RunningX64}
