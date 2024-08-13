@@ -56,7 +56,7 @@ Download it from Here; https://github.com/weskerty/rEFIndWindowsInstaller/releas
 Thanks MLP YoursBootloader; https://github.com/M-L-P/Yours-UEFI
 
 Here is a demonstration video of what you should do;
-<img src="https://github.com/user-attachments/assets/3353ca92-bd34-4924-a4ac-e909f78b2662"> <br>
-<video src="https://github.com/user-attachments/assets/dbdf15c5-0af3-4857-8837-17f4e27bea10"> <br>
+<img src="https://github.com/user-attachments/assets/3353ca92-bd34-4924-a4ac-e909f78b2662"/> <br>
+<video src="https://github.com/user-attachments/assets/dbdf15c5-0af3-4857-8837-17f4e27bea10"/> <br>
 
 </details>
