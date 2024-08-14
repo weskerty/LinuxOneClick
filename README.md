@@ -51,7 +51,7 @@ Just go to C:/MyLinux/uninstall.exe to Uninstall it.
 In the VDI it was done;
 * OEM installation of Linux Mint
 * Running [vtoyBoot](https://github.com/ventoy/vtoyboot) <br>
-* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Aggregate; VTOY_LINUX_REMOUNT=1 mitigations=off mok_sb_state=0. <br>
+* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Aggregate; VTOY_LINUX_REMOUNT=1 mitigations=off. <br>
 * [FSTAB](https://es.wikipedia.org/wiki/Fstab); Aggregate; relatime, nodiratime, noatime. <br>
 You can Adjust these details in their Respective Files. <br>
 If mitigations bother you, just delete it. sudo nano /etc/default/grub and delete mitigations=off, save it and then update grub with sudo update-grub
