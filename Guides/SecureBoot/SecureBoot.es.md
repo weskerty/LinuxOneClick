@@ -3,23 +3,23 @@
 [![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](SecureBoot.br.md)
 [![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](SecureBoot.es.md)
 
-# 🔏 ¿Que es SecureBoot?
+## 🔏 ¿Que es SecureBoot?
 SecureBoot es un Sistema de Seguridad la cual evita que programas no certificados puedan arrancar con el Sistema. <br>
-Lamentablemente este Script de Instalacion Facil Requiere tener SecureBoot Desactivado. 
+Lamentablemente este Script Requiere tener SecureBoot Desactivado ya que no esta firmado por Microsoft
 
-# 📴 Aqui Tienes 2 Metodos de Desactivacion;
-
-<details>
-<summary>👨‍💻 Desactivar SecureBoot desde BIOS</summary>
-Este metodo Desactiva SecureBoot y Permite la Ejecucion de todo tipo de Sistemas y Aplicaciones al Iniciar la PC.<br>
+### 👨‍💻 Desactivar SecureBoot desde BIOS;
 Para Desactivar SecureBoot con este metodo Deberas Reiniciar la PC, y cuando enciende Deberas Pulsar la Tecla `Setup` que aparece en Pantalla. Suele ser `F2` `F12` o `DEL` <br>
-Luego Buscar a travez de las flechas del teclado la Seccion Sistema, Inicio, Seguridad o BOOT y en un Sub Menu debe aparecer SecureBoot, ajustarlo a apagado, guardar y reiniciar. <br>
-Esto varia por PC, Aqui dejare unos Ejemplos de algunas marcas;
-  
+Luego Buscar a travez de las flechas del teclado la Seccion `Sistema\System`, `Inicio\Boot`, `Seguridad` y en un Sub Menu debe aparecer SecureBoot, ajustarlo a apagado, guardar y reiniciar. <br>
+Esto varia por PC, Aqui dejare unos Ejemplos de algunas marcas; <br>
+[![Dell](https://img.shields.io/badge/dell-007DB8?style=for-the-badge&logo=dell&logoColor=white)](https://www.dell.com/support/contents/es-mx/videos/videoplayer/how-to-enable-secure-boot/6333794882112?lwp=rt) [![Asus](https://img.shields.io/badge/Asus-black?style=for-the-badge&logo=asus&logoColor=white)](https://www.youtube.com/watch?v=8nxl-ZzjapA)   [![Acer](https://img.shields.io/badge/acer-83B81A?style=for-the-badge&logo=acer&logoColor=white)](https://www.youtube.com/watch?v=fziNzTmiwPE)   [![HP](https://img.shields.io/badge/hp-0096D6?style=for-the-badge&logo=hp&logoColor=white)](https://www.youtube.com/watch?v=mh5mDCw5L4M)   [![Lenovo](https://img.shields.io/badge/lenovo-E2231A?style=for-the-badge&logo=lenovo&logoColor=white)](https://support.lenovo.com/cl/es/videos/nvid500424-disable-and-enable-secure-boot-in-bios-lenovo-support-quick-tips) [![Samsung](	https://img.shields.io/badge/samsung%20laptop-1428A0?style=for-the-badge&logo=Samsung&logoColor=white)](https://www.youtube.com/watch?v=4GPmc8QVCQE) [![MSI](https://img.shields.io/badge/MSI-FF0000?style=for-the-badge&logo=msi&logoColor=white)](https://www.youtube.com/watch?v=EypQEavuO_8) [![]()]() [![]()]() 
 <details>
 <summary>Lenovo ThinkPad</summary> 
-Aqui un Ejemplo en Video de la Propia Lenovo;
-<video src="https://github.com/user-attachments/assets/1517bb59-abd1-43a2-9a51-0ef32ccd21db">
+Aqui 2 Ejemplos; <br>
+Versiones Antiguas;
+https://youtu.be/_MeUEWgv8i4?t=146 <br>
+Versiones Nuevas <br>
+<video src="https://github.com/user-attachments/assets/1517bb59-abd1-43a2-9a51-0ef32ccd21db"/>
+
 </details>
 <details>
 <summary>HP</summary>
@@ -41,22 +41,5 @@ Luego seleccionar SecureBoot, enter y Disable/OFF. <br>
 <img src="https://github.com/user-attachments/assets/cbff9304-1fb4-455f-9808-a8ccc3c93659" width="350" height="240" /> <br>
 Ahora ir a Guardar y Reiniciar.
 
-
-</details>
-
-</details>
-
-<details>
-<summary>🔏 Sin Necesidad de Entrar a la BIOS</summary>
-Esto es un Script de Instalacion SemiAutomatica que Instala YoursBootloader. Requiere una Interaccion de una sola vez para Agregar una Llave. <br>
-Aqui no se desactiva SecureBoot, Reemplaza la Llave Anterior con una Llave de uso Global para que los Programas con esta llave Puedan Ejecutarse. <br>
-Esto Reemplaza la carpeta BOOT de la particion EFI, esto puede no Funcionar en Computadoras con Firmware del 2024 y Superior.<br>
-Descargalo de Aqui; https://github.com/weskerty/rEFIndWindowsInstaller/releases/download/SecureBoot/Yours.exe <br>
-
-Agradecimiento MLP YoursBootloader; https://github.com/M-L-P/Yours-UEFI
-
-Aqui un Video demostrativo de lo que debes Hacer;
-<img src="https://github.com/user-attachments/assets/3353ca92-bd34-4924-a4ac-e909f78b2662"> <br>
-<video src="https://github.com/user-attachments/assets/dbdf15c5-0af3-4857-8837-17f4e27bea10"> <br>
 
 </details>
