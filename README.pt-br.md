@@ -75,7 +75,7 @@ Se as mitigações incomodam você, basta excluí-lo. sudo nano /etc/default/gru
 
 ## [💽 Guia sobre como instalar o LinuxMint diretamente ↗️](Guides/LinuxInstall/LinuxInstall.md)
 
-## 💗 Usado [NSISMod](https://sourceforge.net/projects/nsisbi/files/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files), [rEFInd](https://www.rodsbooks.com/refind/)
+## 💗 Usado [NSISMod](https://sourceforge.net/projects/nsisbi/files/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files), [rEFInd](https://www.rodsbooks.com/refind/), [![GHBadges](https://img.shields.io/badge/Badges-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md)
 
 ## 📝 Todos são livres para editar esta mistura de scripts
 
