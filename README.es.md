@@ -51,7 +51,7 @@ Simplemente vaya a C:/MiLinux/uninstall.exe para Desinstalarlo.
 En la VDI se Realizo;
 * Instalacion OEM de Linux Mint
 * Ejecucion de [vtoyBoot](https://github.com/ventoy/vtoyboot) <br>
-* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Agregado; VTOY_LINUX_REMOUNT=1  mitigations=off mok_sb_state=0. <br>
+* [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Agregado; VTOY_LINUX_REMOUNT=1  mitigations=off. <br>
 * [FSTAB](https://es.wikipedia.org/wiki/Fstab); Agregado; relatime, nodiratime, noatime. <br>
 Puedes Reajustar estos detalles en sus Respectivos Archivos. <br>
 En caso de molestarte mitigations solo borralo. sudo nano /etc/default/grub y borra mitigations=off, guardalo y luego actualiza grub con sudo update-grub
