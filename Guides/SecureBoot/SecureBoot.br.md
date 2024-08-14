@@ -3,23 +3,23 @@
 [![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](SecureBoot.br.md)
 [![es](https://img.shields.io/badge/Espa%C3%B1ol-es-yellow.svg)](SecureBoot.es.md)
 
-# 🔏 O que é SecureBoot?
+## 🔏 O que é SecureBoot?
 SecureBoot é um sistema de segurança que impede que programas não certificados sejam iniciados no sistema. <br>
-Infelizmente, este script de instalação fácil requer a desativação do SecureBoot.
+Infelizmente, este script requer a desativação do SecureBoot, pois não é assinado pela Microsoft
 
-# 📴 Aqui você tem 2 métodos de desativação;
-
-<details>
-<summary>👨‍💻 Desative o SecureBoot do BIOS</summary>
-Este método desativa o SecureBoot e permite a execução de todos os tipos de sistemas e aplicativos ao iniciar o PC.<br>
+### 👨‍💻 Desative o SecureBoot do BIOS;
 Para desativar o SecureBoot com este método, você deve reiniciar o PC e, quando ele ligar, você deve pressionar a tecla `Setup` que aparece na tela. Geralmente é `F2` `F12` ou `DEL` <br>
-Em seguida, use as setas do teclado para pesquisar a seção Sistema, Iniciar, Segurança ou BOOT e o SecureBoot deve aparecer em um submenu, desative-o, salve e reinicie. <br>
-Isso varia de acordo com o PC, aqui deixarei alguns exemplos de algumas marcas;
-
+Em seguida, procure nas setas do teclado a seção `System\System`, `Start\Boot`, `Security` e em um submenu SecureBoot deve aparecer, desative-o, salve e reinicie. <br>
+Isso varia de acordo com o PC, aqui deixarei alguns exemplos de algumas marcas; <br>
+[![Dell](https://img.shields.io/badge/dell-007DB8?style=for-the-badge&logo=dell&logoColor=white)](https://www.dell.com/support/contents/es-mx/videos/videoplayer/how-to-enable-secure-boot/6333794882112?lwp=rt) [![Asus](https://img.shields.io/badge/Asus-black?style=for-the-badge&logo=asus&logoColor=white)](https://www.youtube.com/watch?v=8nxl-ZzjapA)   [![Acer](https://img.shields.io/badge/acer-83B81A?style=for-the-badge&logo=acer&logoColor=white)](https://www.youtube.com/watch?v=fziNzTmiwPE)   [![HP](https://img.shields.io/badge/hp-0096D6?style=for-the-badge&logo=hp&logoColor=white)](https://www.youtube.com/watch?v=mh5mDCw5L4M)   [![Lenovo](https://img.shields.io/badge/lenovo-E2231A?style=for-the-badge&logo=lenovo&logoColor=white)](https://support.lenovo.com/cl/es/videos/nvid500424-disable-and-enable-secure-boot-in-bios-lenovo-support-quick-tips) [![Samsung](	https://img.shields.io/badge/samsung-1428A0?style=for-the-badge&logo=Samsung&logoColor=white)](https://www.youtube.com/watch?v=4GPmc8QVCQE) [![MSI](https://img.shields.io/badge/MSI-FF0000?style=for-the-badge&logo=msi&logoColor=white)](https://www.youtube.com/watch?v=EypQEavuO_8) [![]()]() [![]()]() 
 <details>
 <summary>Lenovo ThinkPad</summary>
-Aqui está um exemplo de vídeo da própria Lenovo;
-<video src="https://github.com/user-attachments/assets/1517bb59-abd1-43a2-9a51-0ef32ccd21db">
+Aqui estão 2 exemplos; <br>
+Versões Antigas;
+https://youtu.be/_MeUEWgv8i4?t=146 <br>
+Novas Versões <br>
+<vídeo src="https://github.com/user-attachments/assets/1517bb59-abd1-43a2-9a51-0ef32ccd21db"/>
+
 </details>
 <details>
 <summary>HP</summary>
@@ -41,22 +41,5 @@ Em seguida, selecione SecureBoot, entre e Desative/DESLIGUE. <br>
 <img src="https://github.com/user-attachments/assets/cbff9304-1fb4-455f-9808-a8ccc3c93659" width="350" height="240" /> <br>
 Agora vá para Salvar e Reiniciar.
 
-
-</details>
-
-</details>
-
-<details>
-<summary>🔏 Não há necessidade de entrar na BIOS</summary>
-Este é um script de instalação semiautomático que instala o YoursBootloader. Requer uma interação única para adicionar uma chave. <br>
-O SecureBoot não está desativado aqui. Substitua a chave anterior por uma chave de uso global para que os programas com esta chave possam ser executados. <br>
-Isso substitui a pasta BOOT da partição EFI. Isso pode não funcionar em computadores com firmware 2024 e superior.<br>
-Baixe aqui; https://github.com/weskerty/rEFIndWindowsInstaller/releases/download/SecureBoot/Yours.exe <br>
-
-Obrigado MLP YoursBootloader; https://github.com/M-L-P/Yours-UEFI
-
-Aqui está um vídeo de demonstração do que você deve fazer;
-<img src="https://github.com/user-attachments/assets/3353ca92-bd34-4924-a4ac-e909f78b2662"> <br>
-<video src="https://github.com/user-attachments/assets/dbdf15c5-0af3-4857-8837-17f4e27bea10"> <br>
 
 </details>
