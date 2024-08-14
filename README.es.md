@@ -75,7 +75,7 @@ En caso de molestarte mitigations solo borralo. sudo nano /etc/default/grub y bo
 
 ## [💽 Guia de Como Instalar LinuxMint Directamente ↗️](Guides/LinuxInstall/LinuxInstall.md)
 
-## 💗 Se Uso [NSISMod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/)
+## 💗 Se Uso [NSISMod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/), [![GHBadges](https://img.shields.io/badge/Badges-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md)
 
 ## 📝 Todos Son Libres de Editar este Mejunje de Scripts 
 
