@@ -38,17 +38,36 @@ Se establece rEFInd o Grub2 como Gestor de Arranque. <br>
 [![Facebook](https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=fff&style=flat)](https://www.facebook.com/groups/GNUAndLinux/) 	 
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=fat&logo=discord&logoColor=white)](https://discord.com/invite/D4ETYhq)
 
-## [🌄Instalacion de Temas de Inicio ↗️](Guides/Themes/Themes.md)
+## 🌄Cambiar Imagen de Arranque;
+
+<details>
+<summary>Pasos a Seguir; ⬇️</summary>
+<video src=""/> <br>
+</details>
 
 ## 💢 ¿Errores? [Informalo Aqui ↗️](https://github.com/weskerty/LinuxOneClick/issues/new)
 
 ## 🗑️ Desinstalacion;
-Simplemente vaya a C:/MiLinux/uninstall.exe para Desinstalarlo.
+<details>
+<summary>Pasos a Seguir; ⬇️</summary>
+Simplemente vaya a C:/MiLinux/uninstall.exe para Desinstalarlo como se ve en este Video; <br>
+<video src=""/> <br>
+Asi de Facil.
+</details>
 
-## [💿 Aumentar Tamaño de Almacenamiento Linux VDI ↗️](Guides/VDI/VDI.md)
+## 💿 Aumentar Tamaño de Almacenamiento Linux VHD;
+<details>
+<summary>Pasos a Seguir; ⬇️</summary>
+Ir al archivo llamado "AddStorage.bat" que se encuentra en C:/MiLinux/ y Ejecutarlo como Administrador. <br>
+Luego escribir la Cantidad que te Gustaria en GB. Debe ser el Tamaño Total. Actualmente es 25GB, si quieres 5GB mas entonces Escribes 30. Agregara 5GB mas para que tenga 30GB. <br>
+Una vez completado el Proceso, Reinicia a Linux y abre el Programa Discos, Clic derecho sobre el Disco EXT4 y Reajustar Tamaño. Luego mueve la barra para abarcar la Totalidad de la memoria. Aceptar y Listo. <br>
+Video Demostrativo;
+<video src=""/> <br>
+</details>
+
 
 ## 🐧 MiLinux 
-En la VDI se Realizo;
+En el VHD se Realizo;
 * Instalacion OEM de Linux Mint
 * Ejecucion de [vtoyBoot](https://github.com/ventoy/vtoyboot) <br>
 * [GRUB](https://es.wikipedia.org/wiki/GNU_GRUB); Agregado; VTOY_LINUX_REMOUNT=1  mitigations=off. <br>
@@ -72,6 +91,17 @@ En caso de molestarte mitigations solo borralo. sudo nano /etc/default/grub y bo
 > La instalacion Dañara el Boot de WindowsXP en caso de que no sea WXP Oficial. <br>
 > En Caso de que Windows no vuelva a iniciar, Pulse el [Boton BootMenu ↗️](Guides/BootMenu/BootMenu.md) al Instante que Inicia su PC. Luego Elija WindowsBootLoader<br>
 > Alternativamente Puede usar un [Disco de Reparacion ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86-20240711-english-version.html) para Iniciar Windows. <br>
+
+## 😐 ¿No Te Gusta Linux Mint? Instala otra Distribucion;
+<details>
+<summary>Pasos a Seguir; ⬇️</summary>
+Puedes cambiar la Instalacion del VHD con VirtualBox y Seguir la Instalacion Correspondiente desde Ahi. <br>
+Descarga e Instala VirtualBox en Windows https://www.virtualbox.org/wiki/Downloads <br>
+Abre VirtualBox, Clic en Nueva Maquina, Ajusta el Nombre y la Ubicacion de la ISO (medio de instalacion). Luego Ajusta los Recursos que usara VirtualBox. DEBES MARCAR HABILITAR EFI. Luego Seleccionas "Usar Disco Existente" y Seleccionas el Icono de Carpeta para Buscar la Ubicacion de MiLinux.vhd.vtoy, lo seleccionas y Siguiente. Inicia la Maquina Virtual y Instala tu Distro como de Costumbre.
+Aqui un Ejemplo en Video; 
+<video src=""/> <br>
+</details>
+
 
 ## [💽 Guia de Como Instalar LinuxMint Directamente ↗️](Guides/LinuxInstall/LinuxInstall.md)
 
