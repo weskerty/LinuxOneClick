@@ -26,7 +26,7 @@ Unfortunately this Script Requires having SecureBoot Disabled since it is not si
 To Deactivate SecureBoot with this method, you must restart the PC, and when it turns on, you must press the `Setup` key that appears on the screen. This is usually `F2` `F12` or `DEL` <br>
 Then Search through the keyboard arrows for the Section `System\System`, `Start\Boot`, `Security` and in a Sub Menu SecureBoot should appear, set it to off, save and restart. <br>
 This varies by PC, Here are some Examples; <br>
-[![Dell](https://img.shields.io/badge/dell-007DB8?style=for-the-badge&logo=dell&logoColor=white)](https://www.dell.com/support/contents/ en-mx/videos/videoplayer/how-to-enable-secure-boot/6333794882112?lwp=rt) [![Asus](https://img.shields.io/badge/Asus-black?style=for- the-badge&logo=asus&logoColor=white)](https://www.youtube.com/watch?v=8nxl-ZzjapA) [![Acer](https://img.shields.io/badge/acer-83B81A? style=for-the-badge&logo=acer&logoColor=white)](https://www.youtube.com/watch?v=fziNzTmiwPE) [![HP](https://img.shields.io/badge/hp- 0096D6?style=for-the-badge&logo=hp&logoColor=white)](https://www.youtube.com/watch?v=mh5mDCw5L4M) [![Lenovo](https://img.shields.io/badge/ lenovo-E2231A?style=for-the-badge&logo=lenovo&logoColor=white)](https://support.lenovo.com/cl/es/videos/nvid500424-disable-and-enable-secure-boot-in-bios- lenovo-support-quick-tips) [![Samsung]( https://img.shields.io/badge/samsung-1428A0?style=for-the-badge&logo=Samsung&logoColor=white)](https://www. youtube.com/watch?v=4GPmc8QVCQE) [![MSI](https://img.shields.io/badge/MSI-FF0000?style=for-the-badge&logo=msi&logoColor=white)](https:// www.youtube.com/watch?v=EypQEavuO_8) [![]()]() [![]()]()
+[![Dell](https://img.shields.io/badge/dell-007DB8?style=for-the-badge&logo=dell&logoColor=white)](https://www.dell.com/support/contents/en-mx/videos/videoplayer/how-to-enable-secure-boot/6333794882112?lwp=rt) [![Asus](https://img.shields.io/badge/Asus-black?style=for-the-badge&logo=asus&logoColor=white)](https://www.youtube.com/watch?v=8nxl-ZzjapA) [![Acer](https://img.shields.io/badge/acer-83B81A?style=for-the-badge&logo=acer&logoColor=white)](https://www.youtube.com/watch?v=fziNzTmiwPE) [![HP](https://img.shields.io/badge/hp-0096D6?style=for-the-badge&logo=hp&logoColor=white)](https://www.youtube.com/watch?v=mh5mDCw5L4M) [![Lenovo](https://img.shields.io/badge/lenovo-E2231A?style=for-the-badge&logo=lenovo&logoColor=white)](https://support.lenovo.com/cl/es/videos/nvid500424-disable-and-enable-secure-boot-in-bios-lenovo-support-quick-tips) [![Samsung]( https://img.shields.io/badge/samsung-1428A0?style=for-the-badge&logo=Samsung&logoColor=white)](https://www.youtube.com/watch?v=4GPmc8QVCQE) [![MSI](https://img.shields.io/badge/MSI-FF0000?style=for-the-badge&logo=msi&logoColor=white)](https://www.youtube.com/watch?v=EypQEavuO_8) [![]()]() [![]()]()
 <details>
 <summary>Lenovo ThinkPad</summary>
 Here 2 Examples; <br>
@@ -129,7 +129,7 @@ If mitigations bother you, just delete it. sudo nano /etc/default/grub and delet
 > [!WARNING]
 > The installation will damage the WindowsXP Boot if it is not Official WXP. <br>
 > In case Windows does not start again, press the [BootMenu Button ↗️](Guides/BootMenu/BootMenu.md) as soon as your PC starts. Then Choose WindowsBootLoader<br>
-> Alternatively you can use a [Repair Disk ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86- 20240711-english-version.html) to Start Windows. <br>
+> Alternatively you can use a [Repair Disk ↗️](https://sergeistrelec.name/winpe-10-8-sergei-strelec-english/237-winpe-11-10-8-sergei-strelec-x86x64native-x86-20240711-english-version.html) to Start Windows. <br>
 
 ## 😐 Don't Like Linux Mint? Install another Distribution;
 <details>
@@ -142,7 +142,7 @@ Here is a Video Example;
 </details>
 
 
-## 💗 [NSISMod] was used (https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain) , [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/), [![GHBadges](https://img .shields.io/badge/Badges-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md )
+## 💗 was used [NSISMod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain) , [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/), [![GHBadges](https://img.shields.io/badge/Badges-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md )
 
 ## 📝 Everyone is Free to Edit this Concoction of Scripts
 
