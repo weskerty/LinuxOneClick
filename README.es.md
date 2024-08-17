@@ -12,9 +12,8 @@ Relajate Hasta que Termine el Proceso. Puedes hacer otras cosas Mientras se inst
 ## 📹 Video Demostrativo: 
 https://github.com/user-attachments/assets/f729b276-0923-41c1-9bd5-7d44e5524a82
 >[!NOTE]
-> El video esta acelerado, esto tardara dependiendo de tu PC.<br>
-> Se Requiere 35GB de Espacio Libre. <br>
-> Al abrir el Exe la ventana del explorador se quedara colgada hasta que termine de copiarse si tienes activado el Control Cuentas de Usuario. Paciencia. <br>
+> ⏩ El video esta acelerado, esto tardara dependiendo de tu PC.<br>
+> 💽 Se Requiere 35GB de Espacio Libre. <br>
 > 🔓 Se Requiere SecureBoot Deshabilitado. En caso de tenerlo habilitado el programa se instalara pero al Reiniciar Iniciara Windows Normalmente.
 ## 🔓 ¿Como Deshabilitar SecureBoot?
 <details>
@@ -26,7 +25,7 @@ Lamentablemente este Script Requiere tener SecureBoot Desactivado ya que no esta
 ### 👨‍💻 Desactivar SecureBoot desde BIOS;
 Para Desactivar SecureBoot con este metodo Deberas Reiniciar la PC, y cuando enciende Deberas Pulsar la Tecla `Setup` que aparece en Pantalla. Suele ser `F2` `F12` o `DEL` <br>
 Luego Buscar a traves de las flechas del teclado la Seccion `Sistema\System`, `Inicio\Boot`, `Seguridad` y en un Sub Menu debe aparecer SecureBoot, ajustarlo a apagado, guardar y reiniciar. <br>
-Esto varia por PC, Aqui dejare unos Ejemplos de algunas marcas; <br>
+Esto varia por PC, Aqui hay algunos Ejemplos; <br>
 [![Dell](https://img.shields.io/badge/dell-007DB8?style=for-the-badge&logo=dell&logoColor=white)](https://www.dell.com/support/contents/es-mx/videos/videoplayer/how-to-enable-secure-boot/6333794882112?lwp=rt) [![Asus](https://img.shields.io/badge/Asus-black?style=for-the-badge&logo=asus&logoColor=white)](https://www.youtube.com/watch?v=8nxl-ZzjapA)   [![Acer](https://img.shields.io/badge/acer-83B81A?style=for-the-badge&logo=acer&logoColor=white)](https://www.youtube.com/watch?v=fziNzTmiwPE)   [![HP](https://img.shields.io/badge/hp-0096D6?style=for-the-badge&logo=hp&logoColor=white)](https://www.youtube.com/watch?v=mh5mDCw5L4M)   [![Lenovo](https://img.shields.io/badge/lenovo-E2231A?style=for-the-badge&logo=lenovo&logoColor=white)](https://support.lenovo.com/cl/es/videos/nvid500424-disable-and-enable-secure-boot-in-bios-lenovo-support-quick-tips) [![Samsung](	https://img.shields.io/badge/samsung-1428A0?style=for-the-badge&logo=Samsung&logoColor=white)](https://www.youtube.com/watch?v=4GPmc8QVCQE) [![MSI](https://img.shields.io/badge/MSI-FF0000?style=for-the-badge&logo=msi&logoColor=white)](https://www.youtube.com/watch?v=EypQEavuO_8) [![]()]() [![]()]() 
 <details>
 <summary>Lenovo ThinkPad</summary> 
@@ -79,29 +78,9 @@ Se establece rEFInd o Grub2 como Gestor de Arranque. <br>
 [![Facebook](https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=fff&style=flat)](https://www.facebook.com/groups/brlinux/) 	 
 #### English; 
 [![Facebook](https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=fff&style=flat)](https://www.facebook.com/groups/GNUAndLinux/) 	 
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=fat&logo=discord&logoColor=white)](https://discord.com/invite/D4ETYhq)
-
-## 🌄Cambiar Imagen de Arranque;
-
-<details>
-<summary>Pasos a Seguir; ⬇️</summary>
-<details>
-<summary> Con rEFInd; </summary>
-Si tienes UEFI se instala rEFInd. <br>
-Busca y Descarga alguno que te Guste de Aqui; https://refind-themes-collection.netlify.app/ <br>
-Descomprime el Tema en la Carpeta C:\MiLinux\refind\themes\ <br>
-Luego Edita refind.conf y cambia la ultima linea que dice ""include themes/rEFInd-glassy/theme.conf"" solo debes cambiar el /rEFInd-glassy/ por el nombre de la carpeta de tu nuevo tema. <br>
-Luego ejecuta rEFInd64.bat como Administrador. Listo. <br>
-<video src=""/> <br>
-</details>
-
-<details>
-<summary>Con Grub2Win </summary>
-Abre el Programa Grub2Win... <br>
-
-<video src=""/> <br>
-</details>
-</details>
+[![Discord](https://img.shields.io/badge/DiscordOfficial-87cf3e?style=fat&logo=discord&logoColor=white)](https://discord.gg/mint)
+[![Discord2](https://img.shields.io/badge/Discord2-7289DA?style=fat&logo=discord&logoColor=white)](https://discord.com/invite/D4ETYhq)
+[![Reddit](https://img.shields.io/badge/Reddit-FF5722?style=fat&logo=reddit&logoColor=white)](https://www.reddit.com/r/linuxmint/)
 
 ## 💢 ¿Errores? [Informalo Aqui ↗️](https://github.com/weskerty/LinuxOneClick/issues/new)
 
@@ -121,9 +100,10 @@ Ir al archivo llamado "AddStorage.bat" que se encuentra en C:/MiLinux/ y Ejecuta
 Luego escribir la Cantidad que te Gustaria en GB. Debe ser el Tamaño Total. Actualmente es 25GB, si quieres 5GB mas entonces Escribes 30. Agregara 5GB mas para que tenga 30GB. <br>
 Una vez completado el Proceso, Reinicia a Linux y abre el Programa Discos, Clic derecho sobre el Disco EXT4 y Reajustar Tamaño. Luego mueve la barra para abarcar la Totalidad de la memoria. Aceptar y Listo. <br>
 Video Demostrativo;
-<video src=""/> <br>
+<video src="https://github.com/user-attachments/assets/09c339b1-b39a-4bf6-be96-2147463ed04b"/> <br>
 </details>
 
+# [💟 Mas Informacion Sobre Linux Mint ↗️](https://linuxmint.com.es/)
 
 ## 🐧 MiLinux 
 En el VHD se Realizo;
@@ -136,11 +116,11 @@ En caso de molestarte mitigations solo borralo. sudo nano /etc/default/grub y bo
 
 ## 🖥️ Esto funciona en;  <img src="https://github.com/user-attachments/assets/8ff47ebe-780f-4d4b-894f-779c0887d844" alt="WorkOnMiPCGG" width="100" height="60"/>
 
-- [x] WindowsXP 32 y 64Bits (Oficial) - VirtualBox
-- [x] WindowsVista 32 y 64Bits - VirtualBox
-- [x] Windows7 32 y 64Bits - VirtualBox
-- [x] Windows10 32 y 64Bits - GigabyteA320M
-- [x] Windows11 23H3 64 Bits - VirtualBox
+- [x] WindowsXP 32 y 64Bits (Oficial)
+- [x] WindowsVista 32 y 64Bits 
+- [x] Windows7 32 y 64Bits 
+- [x] Windows10 32 y 64Bits 
+- [x] Windows11 23H3 64 Bits 
 
 >[!NOTE]
 > Aunque se instala en Windows de 32Bits, el Procesador debe ser Compatible con 64Bits para Iniciar LinuxMint. <br>
@@ -161,8 +141,6 @@ Aqui un Ejemplo en Video;
 <video src=""/> <br>
 </details>
 
-
-## [💽 Guia de Como Instalar LinuxMint Directamente ↗️](Guides/LinuxInstall/LinuxInstall.md)
 
 ## 💗 Se Uso [NSISMod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/), [![GHBadges](https://img.shields.io/badge/Badges-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md)
 
