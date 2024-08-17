@@ -88,7 +88,7 @@ Se establece rEFInd o Grub2 como Gestor de Arranque. <br>
 <details>
 <summary>Pasos a Seguir; ⬇️</summary>
 Simplemente vaya a C:/MiLinux/uninstall.exe para Desinstalarlo como se ve en este Video; <br>
-<video src=""/> <br>
+<video src="https://github.com/user-attachments/assets/fd6e3b13-3232-413f-881e-e8c56e44b71d"/> <br>
 
 Asi de Facil.
 </details>
