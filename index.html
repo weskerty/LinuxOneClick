@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto en GitHub</title>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+    <title>Linux One Clic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, p {
+            color: white;
+        }
+
+        zero-md {
+            display: block;
+        }
+    </style>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2.3.0/dist/zero-md.min.js"></script>
 </head>
 <body>
-    <zero-md src="https://raw.githubusercontent.com/weskerty/LinuxOneClick/main/README.es.md"></zero-md>
+    <div class="content">
+        <zero-md src="README.md"></zero-md>
+    </div>
 </body>
 </html>
