@@ -1,3 +1,12 @@
+<style>
+body {
+    color: white;
+}
+h1, h2, h3 {
+    color: white;
+}
+</style>
+
 ## 🌎 Selecciona Idioma; 
 [![en](https://img.shields.io/badge/English-red.svg)](README.md)
 [![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](README.pt-br.md)
@@ -6,7 +15,7 @@
 ## 🐧 Linux a un Clic
 Instalar Linux desde Windows Facilmente
 Sin Riesgos, Manteniendo Windows con Todos tus Archivos.
-## 💾 Simplemente Descarga e Instala [Este Archivo ⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/MiLinuxVDI.exe?viasf=1) 
+## 💾 Simplemente Descarga e Instala [Este Archivo ⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/MiLinux.exe?viasf=1) 
 Relajate Hasta que Termine el Proceso. Puedes hacer otras cosas Mientras se instala, como Navegar por Internet.
 
 ## 📹 Video Demostrativo: 
@@ -79,7 +88,7 @@ Se establece rEFInd o Grub2 como Gestor de Arranque. <br>
 #### English; 
 [![Facebook](https://img.shields.io/badge/Facebook-blue?logo=facebook&logoColor=fff&style=flat)](https://www.facebook.com/groups/GNUAndLinux/) 	 
 [![Discord](https://img.shields.io/badge/DiscordOfficial-87cf3e?style=fat&logo=discord&logoColor=white)](https://discord.gg/mint)
-[![Discord2](https://img.shields.io/badge/Discord2-7289DA?style=fat&logo=discord&logoColor=white)](https://discord.com/invite/D4ETYhq)
+[![Discord2](https://img.shields.io/badge/Discord2-7289DA?style=fat&logo=discord&logoColor=white)](https://discord.gg/linux-for-all-304606245132697600)
 [![Reddit](https://img.shields.io/badge/Reddit-FF5722?style=fat&logo=reddit&logoColor=white)](https://www.reddit.com/r/linuxmint/)
 
 ## 💢 ¿Errores? [Informalo Aqui ↗️](https://github.com/weskerty/LinuxOneClick/issues/new)
@@ -137,19 +146,10 @@ En caso de molestarte mitigations solo borralo. sudo nano /etc/default/grub y bo
 Puedes cambiar la Instalacion del VHD con VirtualBox y Seguir la Instalacion Correspondiente desde Ahi. <br>
 Descarga e Instala VirtualBox en Windows https://www.virtualbox.org/wiki/Downloads <br>
 Abre VirtualBox, Clic en Nueva Maquina, Ajusta el Nombre y la Ubicacion de la ISO (medio de instalacion). Luego Ajusta los Recursos que usara VirtualBox. DEBES MARCAR HABILITAR EFI. Luego Seleccionas "Usar Disco Existente" y Seleccionas el Icono de Carpeta para Buscar la Ubicacion de MiLinux.vhd.vtoy, lo seleccionas y Siguiente. Inicia la Maquina Virtual y Instala tu Distro como de Costumbre.
-Aqui un Ejemplo en Video; 
-<video src=""/> <br>
 </details>
 
+## [🐧 Instala Linux Directamente ↗️](https://youtu.be/2mUI3CMjmMc?t=27) 
 
 ## 💗 Se Uso [NSISMod](https://sourceforge.net/projects/nsisbi/files/nsisbi3.04.1/), [7Zip](https://7zip-es.updatestar.com/), [VDiskChain](https://github.com/ventoy/vdiskchain), [Grub2Win](https://sourceforge.net/projects/grub2win/files/), [rEFInd](https://www.rodsbooks.com/refind/), [![GHBadges](https://img.shields.io/badge/Badges-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md)
 
 ## 📝 Todos Son Libres de Editar este Mejunje de Scripts 
-
-<details>
-<summary>Antiguo</summary>
-Esto era hermoso, hasta podias elegir que Distro Instalar. Pero lamentablemente no funcionaba con W7 e inferiores, nisiquiera con curl por errores de certificado.
-
-<video src="https://github.com/user-attachments/assets/a98d0f3e-bd70-4b2a-86cc-33724ea62dc0">
-
-</details>
