@@ -54,12 +54,12 @@
     <script>
         document.addEventListener("DOMContentLoaded", async function() {
             const userLang = navigator.language || navigator.userLanguage;
-            let htmlFile = 'web/index.html';
+            let htmlFile = 'web/ingles.html';
 
             if (userLang.startsWith('es')) {
-                htmlFile = 'web/index.es.html'; 
+                htmlFile = 'web/es.html'; 
             } else if (userLang.startsWith('pt')) {
-                htmlFile = 'web/index.pt.html'; 
+                htmlFile = 'web/pt.html'; 
             }
 
             try {
