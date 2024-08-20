@@ -27,8 +27,21 @@
             color: white;
         }
 
+        /* Estilos aplicados dentro de zero-md */
         zero-md {
             display: block;
+        }
+
+        zero-md::part(article) {
+            color: white; /* Color del texto */
+        }
+
+        zero-md::part(article) h1, 
+        zero-md::part(article) h2, 
+        zero-md::part(article) h3, 
+        zero-md::part(article) p, 
+        zero-md::part(article) li {
+            color: white; /* Asegura que todos los encabezados, párrafos y listas sean blancos */
         }
     </style>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2.3.0/dist/zero-md.min.js"></script>
