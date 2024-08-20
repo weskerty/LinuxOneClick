@@ -16,22 +16,22 @@
             color: white;
         }
         a {
-		color: lightblue; 
+            color: lightblue; 
         }
-          blockquote {
-    margin: 20px 0;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-left: 5px solid #ccc;
-    color: white;
-}
-	code {
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-left: 5px solid #ccc;
+            color: white;
+        }
+        code {
             font-family: monospace;
             padding: 2px 4px;
             border-radius: 4px;
-			background-color: rgba(0, 0, 0, 0.7);
-			border-left: 5px solid #ccc;
-			color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-left: 5px solid #ccc;
+            color: white;
         }
         .content {
             background-color: rgba(0, 0, 0, 0.7);
@@ -74,5 +74,21 @@
             }
         });
     </script>
+	
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href; 
+            this.page.identifier = document.title;
+        };
+
+        (function() {  
+            var d = document, s = d.createElement('script');
+            s.src = 'https://linuxoneclic.disqus.com/embed.js'; 
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript> JavaScript OFF <a href="https://disqus.com/?ref_noscript"></a></noscript>
 </body>
 </html>
