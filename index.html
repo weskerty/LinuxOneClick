@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linux One Clic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Comfortaa', sans-serif;
             background: url('https://img.goodfon.com/original/1360x768/4/a2/tekstury-razmytie-siniy.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
         }
-
+        a {
+		color: lightblue; 
+        }
+          blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 5px solid #ccc;
+    color: white;
+}
+	code {
+            font-family: monospace;
+            padding: 2px 4px;
+            border-radius: 4px;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-left: 5px solid #ccc;
+			color: white;
+        }
         .content {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
@@ -26,30 +45,34 @@
         h1, p {
             color: white;
         }
-
-        zero-md {
-            display: block;
-        }
     </style>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2.3.0/dist/zero-md.min.js" theme="dark"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const userLang = navigator.language || navigator.userLanguage;
-            let readmeFile = 'README.md'; 
-
-            if (userLang.startsWith('es')) {
-                readmeFile = 'README.es.md'; 
-            } else if (userLang.startsWith('pt-BR')) {
-                readmeFile = 'README.pt-br.md'; 
-            }
-
-            document.querySelector('zero-md').setAttribute('src', readmeFile);
-        });
-    </script>
 </head>
 <body>
-    <div class="content">
-        <zero-md src="README.md"></zero-md>
+    <div class="content" id="content">
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            let htmlFile = 'index.html';
+
+            if (userLang.startsWith('es')) {
+                htmlFile = 'web/index.es.html'; 
+            } else if (userLang.startsWith('pt')) {
+                htmlFile = 'web/index.pt.html'; 
+            }
+
+            try {
+                const response = await fetch(htmlFile);
+                if (!response.ok) throw new Error(`Error fetching ${htmlFile}: ${response.statusText}`);
+                const htmlContent = await response.text();
+                
+                document.getElementById('content').innerHTML = htmlContent;
+            } catch (error) {
+                console.error(error);
+                document.getElementById('content').innerHTML = `<p>Error loading content: ${error.message}</p>`;
+            }
+        });
+    </script>
 </body>
 </html>
