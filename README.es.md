@@ -1,12 +1,3 @@
-<style>
-body {
-    color: white;
-}
-h1, h2, h3 {
-    color: white;
-}
-</style>
-
 ## 🌎 Selecciona Idioma; 
 [![en](https://img.shields.io/badge/English-red.svg)](README.md)
 [![pt-br](https://img.shields.io/badge/Português-pt--br-green.svg)](README.pt-br.md)
