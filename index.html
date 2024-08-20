@@ -9,13 +9,13 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: url('https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg') no-repeat center center fixed;
+            background: url('https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
         }
 
         .content {
-            background-color: rgba(0, 0, 0, 0.7); 
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
             max-width: 800px;
@@ -32,6 +32,20 @@
         }
     </style>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2.3.0/dist/zero-md.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            let readmeFile = 'README.md'; 
+
+            if (userLang.startsWith('es')) {
+                readmeFile = 'README.es.md'; 
+            } else if (userLang.startsWith('pt-BR')) {
+                readmeFile = 'README.pt-br.md'; 
+            }
+
+            document.querySelector('zero-md').setAttribute('src', readmeFile);
+        });
+    </script>
 </head>
 <body>
     <div class="content">
