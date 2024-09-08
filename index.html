@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linux One Clic</title>
+    <title>Hispanic Galaxy</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="web/favicon.ico">
     <style>
@@ -11,9 +11,18 @@
             margin: 0;
             padding: 0;
             font-family: 'Comfortaa', sans-serif;
-            background: url('https://img.goodfon.com/original/1360x768/4/a2/tekstury-razmytie-siniy.jpg') no-repeat center center fixed;
-            background-size: cover;
             color: white;
+            overflow-x: hidden; 
+        }
+        video#bg-video {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1; 
         }
         a {
             color: lightblue; 
@@ -40,14 +49,26 @@
             max-width: 800px;
             margin: 50px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
         }
 
         h1, p {
             color: white;
         }
+        
+        #disqus_thread {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://github.com/user-attachments/assets/39cbf647-28cd-4604-a717-ada1439d274b" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
     <div class="content" id="content">
     </div>
 
@@ -68,27 +89,28 @@
                 const htmlContent = await response.text();
                 
                 document.getElementById('content').innerHTML = htmlContent;
+
+                const disqusDiv = document.createElement('div');
+                disqusDiv.id = 'disqus_thread';
+                document.getElementById('content').appendChild(disqusDiv);
+
+                var disqus_config = function () {
+                    this.page.url = window.location.href; 
+                    this.page.identifier = document.title;
+                };
+              
+                (function() {  
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://linuxoneclic.disqus.com/embed.js'; 
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
             } catch (error) {
                 console.error(error);
-                document.getElementById('content').innerHTML = `<p>Error loading content: ${error.message}</p>`;
+                document.getElementById('content').innerHTML = `<p>Error ${error.message}</p>`;
             }
         });
-    </script>
-	
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function () {
-            this.page.url = window.location.href; 
-            this.page.identifier = document.title;
-        };
 
-        (function() {  
-            var d = document, s = d.createElement('script');
-            s.src = 'https://linuxoneclic.disqus.com/embed.js'; 
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript> JavaScript OFF <a href="https://disqus.com/?ref_noscript"></a></noscript>
+    <noscript> JavaScript OFF.</noscript>
 </body>
 </html>
