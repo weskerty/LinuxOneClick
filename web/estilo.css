@@ -1,0 +1,336 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background: url('https://img.goodfon.com/original/1360x768/4/a2/tekstury-razmytie-siniy.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 15px; 
+    background-color: rgba(255, 255, 255, 0.15); 
+    border-left: none; 
+    border-radius: 10px; 
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+blockquote:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); 
+}
+
+blockquote.red {
+    background-color: rgba(0, 0, 0, 0.336);
+    animation: backgroundColorChange 5s infinite;
+}
+
+@keyframes backgroundColorChange {
+    0% {
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+    50% {
+        background-color: rgba(255, 0, 0, 0.7);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323; 
+    z-index: 1000;
+}
+
+.loading-screen p {
+    font-size: 2em;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+video#bg-video {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+}
+
+a {
+    color: lightblue;
+    cursor: pointer;
+}
+
+code {
+    font-family: monospace;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: #232323; 
+    border-left: 5px solid #ccc;
+    color: white;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    display: block; 
+    padding: 10px; 
+    border-radius: 5px; 
+    overflow-x: auto; 
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 50px auto;
+    margin-bottom: -40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 9);
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(7px);
+}
+
+/* carrusel */
+.contenedor-imagenes-animado {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.contenedor-imagenes-animado a {
+    flex: 0 0 25%; 
+    position: relative;
+    transform: translateX(0);
+    animation: moveLeft 5s linear infinite;
+    animation-play-state: running;
+}
+
+.contenedor-imagenes-animado a img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.swiper {
+    width: 100%;
+    padding: 40px 0; 
+    overflow: visible; 
+    position: relative;
+}
+
+.swiper-slide {
+    width: 250px !important; 
+    position: relative;
+    transition: all 0.3s ease; 
+    overflow: hidden; 
+    border-radius: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 300px; 
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 16px;
+    transition: all 0.3s ease; 
+}
+
+
+.swiper-slide-active {
+    z-index: 2; 
+    transform-origin: center center; 
+}
+
+.swiper-slide-active a {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+    height: 200px; /*  350px horizontal */
+    width: 350px; /*  ancho */
+    display: block;
+    margin: 0 auto; /* Centrar el elemento mas ancho */
+}
+
+.swiper-slide-active img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9; /* relacion */
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    transform: scale(0.9); 
+    opacity: 0.7; 
+}
+
+
+.content {
+    overflow: visible !important;
+    padding-bottom: 40px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    opacity: 0.7;
+    transform-origin: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.grid-gallery img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.view-all-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+    background-color: #1557b0;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #666;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #444;
+}
+.rss-section {
+    margin: 30px 0;
+    padding: 20px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    border-radius: 15px;
+}
+
+.rss-section h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.rss-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden; 
+}
+
+.rss-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.rss-item h3 {
+    margin: 0 0 10px 0;
+}
+
+.rss-item h3 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rss-item h3 a:hover {
+    color: #1a73e8;
+}
+
+.rss-item p {
+    color: #e0e0e0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.rss-item img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-top: 10px;
+    display: block; 
+}
+
+
+#disqus-container {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+    border-radius: 30px;
+    max-width: 800px; 
+    margin: 50px auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(7px);
+}
+
+#custom-gallery {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+}
+

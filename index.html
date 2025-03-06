@@ -1,118 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linux One Clic</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="web/favicon.ico">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Comfortaa', sans-serif;
-            color: white;
-            overflow-x: hidden; 
-        }
-        video#bg-video {
-            position: fixed; 
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translate(-50%, -50%);
-            z-index: -1; 
-        }
-        a {
-            color: lightblue; 
-        }
-        blockquote {
-            margin: 20px 0;
-            padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-left: 5px solid #ccc;
-            color: white;
-        }
-        code {
-            font-family: monospace;
-            padding: 2px 4px;
-            border-radius: 4px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-left: 5px solid #ccc;
-            color: white;
-        }
-        .content {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 800px;
-            margin: 50px auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            position: relative;
-            z-index: 1;
-            backdrop-filter: blur(10px);
-        }
-
-        h1, p {
-            color: white;
-        }
-        
-        #disqus_thread {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="web/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <meta name="description" content="Install Linux One Clic">
+    <meta property="og:image" content="https://www.abc.com.py/resizer/v2/LCCGFGFRFJHWNDW3IL3XTDQANU.jpg?auth=e08f02edf642f68d39ccff01365052ef1ca51a53768488f3dacd0739fbad617f&width=1200&smart=true">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 </head>
 <body>
-    <video autoplay muted loop id="bg-video" preload="auto">
-        <source src="https://github.com/user-attachments/assets/39cbf647-28cd-4604-a717-ada1439d274b" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-    </video>
-
-    <div class="content" id="content">
+    <div class="loading-screen" id="loading-screen">
+        <p>⌛Cargando⏳</p>
     </div>
 
+    <div class="content" id="content">
+        <p>⌛Cargando⏳</p>
+    </div>
+
+    <div id="disqus-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    
     <script>
-        document.addEventListener("DOMContentLoaded", async function() {
-            const userLang = navigator.language || navigator.userLanguage;
-            let htmlFile = 'web/ingles.html';
-
-            if (userLang.startsWith('es')) {
-                htmlFile = 'web/es.html'; 
-            } else if (userLang.startsWith('pt')) {
-                htmlFile = 'web/pt.html'; 
+        function hideLoadingScreen() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.classList.add('hide');
             }
+        }
 
+        async function fetchRSS(rssContainer) {
+            const rssUrl = rssContainer.getAttribute('data-rss-url'); 
+            if (!rssUrl) {
+                console.error("No hay data-rss-url");
+                return '<p>Error: No RSS</p>';
+            }
+        
             try {
-                const response = await fetch(htmlFile);
-                if (!response.ok) throw new Error(`Error fetching ${htmlFile}: ${response.statusText}`);
-                const htmlContent = await response.text();
-                
-                document.getElementById('content').innerHTML = htmlContent;
-
-                const disqusDiv = document.createElement('div');
-                disqusDiv.id = 'disqus_thread';
-                document.getElementById('content').appendChild(disqusDiv);
-
-                var disqus_config = function () {
-                    this.page.url = window.location.href; 
-                    this.page.identifier = document.title;
-                };
-              
-                (function() {  
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://linuxoneclic.disqus.com/embed.js'; 
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
+                const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`);
+                const data = await response.json();
+                const feed = data.items.slice(0, 3).map(item => `
+                    <div class="rss-item">
+                        <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+                        <p>${item.description}</p>
+                    </div>
+                `).join("");
+                return feed;
             } catch (error) {
-                console.error(error);
-                document.getElementById('content').innerHTML = `<p>Error loading content: ${error.message}</p>`;
+                console.error("Error RSS:", error);
+                return '<p>Error RSS</p>';
             }
+        }
+
+        async function loadContent(url, updateHistory = true) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Error fetching ${url}: ${response.statusText}`);
+                let content = await response.text();
+        
+                // solo html no disc
+                const contentDiv = document.getElementById('content');
+                contentDiv.innerHTML = content;
+        
+                // Buscar contenedor RSS
+                const rssContainer = contentDiv.querySelector('#rss-container');
+                if (rssContainer) {
+                    // Carga RSS por html
+                    const rssFeed = await fetchRSS(rssContainer);
+                    rssContainer.innerHTML = `
+                        <div class="rss-section">
+                            <h2>Novedades:</h2>
+                            ${rssFeed}
+                        </div>
+                    `;
+                }
+        
+                initializeGalleries();
+
+                if (updateHistory) {
+                    history.pushState({ url: url }, '', window.location.href);
+                }
+            } catch (error) {
+                console.error(`Error cargando contenido: ${error.message}`);
+                document.getElementById('content').innerHTML = `<p>Error Cargando: ${error.message}</p>`;
+            }
+        }
+
+        function loadDisqus() {
+            if (document.getElementById('disqus_thread')) {
+                console.log("Disqus ya cargado");
+                return; 
+            }
+        
+            const disqusDiv = document.createElement('div');
+            disqusDiv.id = 'disqus_thread';
+            document.getElementById('disqus-container').appendChild(disqusDiv);
+        
+            window.disqus_config = function () {
+                this.page.url = 'https://LinuxOneClic/comentarios'; 
+                this.page.identifier = 'comentarios'; //  'comentarios_' + currentPageId; 
+            };
+        
+            const s = document.createElement('script');
+            s.src = 'https://amigos-steam.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            document.body.appendChild(s);
+        }
+
+        async function loadGalleryData() {
+            try {
+                const basePath = window.location.pathname.includes('/SPlol') ? '/SPlol' : '';
+                const response = await fetch(`${basePath}/data.json`);
+                const data = await response.json();
+                return data.galleries;
+            } catch (error) {
+                console.error('Error loading gallery data:', error);
+                return null;
+            }
+        }
+
+        function createSwiper(container, images) {
+            container.innerHTML = `
+                <div class="swiper-wrapper">
+                    ${images.map(item => `
+                        <div class="swiper-slide">
+                            <a href="${item.link}">
+                                <img src="${item.image}" alt="${item.name}" loading="lazy" />
+                            </a>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        
+            return new Swiper(container, {
+                slidesPerView: 'auto', 
+                spaceBetween: 20, 
+                loop: true, 
+                centeredSlides: true, 
+                autoplay: {
+                    delay: 3000, 
+                    disableOnInteraction: false, 
+                }
+            });
+        }
+
+        function createGridGallery(container, images) {
+            container.innerHTML = images.map(item => `
+                <a href="${item.link}">
+                    <img src="${item.image}" alt="${item.name}" loading="lazy" />
+                </a>
+            `).join('');
+        }
+
+        async function initializeGalleries() {
+            function parseInlineGalleryData(element) {
+                try {
+                    const content = element.textContent.trim();
+                    if (!content) return null;
+                    const jsonStr = `[${content}]`;
+                    return { images: JSON.parse(jsonStr) };
+                } catch (error) {
+                    console.error('Error parsing inline gallery data:', error);
+                    return null;
+                }
+            }
+        
+            async function initializeGallery(container, dataSource) {
+                if (!container) return;
+                
+                let galleryData;
+                
+                if (typeof dataSource === 'string') {
+                    const allGalleryData = await loadGalleryData();
+                    galleryData = allGalleryData?.[dataSource];
+                } else {
+                    galleryData = dataSource;
+                }
+        
+                if (!galleryData?.images?.length) {
+                    console.error('No valid gallery data found');
+                    return;
+                }
+        
+                if (container.classList.contains('contenedor-imagenes-animado')) {
+                    container.classList.add('swiper');
+                    createSwiper(container, galleryData.images);
+                } else if (container.classList.contains('grid-gallery')) {
+                    createGridGallery(container, galleryData.images);
+                }
+            }
+        
+            const galleryContainers = {
+                'politicos-gallery': 'politicos',
+                'empresas-gallery': 'empresas',
+                'politicos-grid': 'politicos',
+                'empresas-grid': 'empresas'
+            };
+        
+            for (const [containerId, dataKey] of Object.entries(galleryContainers)) {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    await initializeGallery(container, dataKey);
+                }
+            }
+        
+            const inlineGallerySelector = '.contenedor-imagenes-animado:not(#politicos-gallery):not(#empresas-gallery)';
+            document.querySelectorAll(inlineGallerySelector).forEach(async (container) => {
+                const inlineData = parseInlineGalleryData(container);
+                if (inlineData) {
+                    await initializeGallery(container, inlineData);
+                }
+            });
+        }
+
+        let currentPage = null;
+        let isFirstLoad = true;
+
+        document.addEventListener("DOMContentLoaded", () => {
+const userLang = navigator.language || navigator.userLanguage;
+let contentFile = 'web/en.html'; 
+            
+if (userLang.startsWith('es')) {
+    contentFile = 'web/es.html'; // Web Español
+} else if (userLang.startsWith('pt')) {
+    contentFile = 'web/pt.html'; // WebPortugesBR
+} else {
+    contentFile = 'web/en.html'; // Si no hay idioma compatible sera ingles predeterminado
+}
+            
+            currentPage = window.location.href;
+            loadContent(contentFile, false);
+            loadDisqus(); 
+            isFirstLoad = false;
+            setTimeout(hideLoadingScreen, 5000);
+
+            window.addEventListener('popstate', (event) => {
+                if (event.state && event.state.url) {
+                    loadContent(event.state.url, false);
+                } else {
+                    loadContent(contentFile, false);
+                }
+            });
         });
+
+        document.addEventListener('click', (event) => {
+            const anchor = event.target.closest('a');
+            if (!anchor) return;
+        
+            // Permitir enlaces con target="_blank" para que se abran en una nueva pestaña
+            if (anchor.target === "_blank") return;
+        
+            if (!anchor.href.includes('web/')) return;
+        
+            event.preventDefault(); 
+        
+            const href = anchor.href;
+            const isSpecificFile = href.endsWith('.html');
+            const baseUrl = href.substring(0, href.lastIndexOf('/') + 1);
+            const targetUrl = isSpecificFile ? href : baseUrl + 'es.html';
+        
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            loadContent(targetUrl);
+        });
+        
     </script>
-
-
-    <noscript> JavaScript OFF.</noscript>
+    <!-- Widget de Discord -->
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '1295581997967868005',
+            channel: '1295847194771066971' 
+        })
+    </script>
+    <noscript>JavaScript OFF. Se requiere JS activado</noscript>
 </body>
 </html>
