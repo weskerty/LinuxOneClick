@@ -6,7 +6,8 @@
 ## 🐧 Linux in one Click
 Install Linux from Windows Easily
 Without Risks, Keeping Windows with All Your Files.
-## 💾 Simply Download and Install [This File ⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/MiLinuxVDI.exe?viasf=1)
+## 💾 Simply Download and Install 
+# [Linux Mint ⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/MiLinux.exe?viasf=1) or [Arch Linux⬇️](https://master.dl.sourceforge.net/project/linuxoneclick/ArchInstall.exe?viasf=1)
 Relax Until the Process Finishes. You can do other things while it installs, like surf the Internet.
 
 ## 📹 Demonstrative Video:
