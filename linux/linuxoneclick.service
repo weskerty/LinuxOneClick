@@ -1,0 +1,12 @@
+[Unit]
+Description=LinuxOneClick: ESP real y espacio libre para btrfs
+After=local-fs.target
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/linuxoneclick
+TimeoutStartSec=15min
+
+[Install]
+WantedBy=multi-user.target
